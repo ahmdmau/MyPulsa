@@ -11,6 +11,9 @@ struct PhoneNumber {
     static let defaultPhoneNumber = "081295365029"
 }
 
+ let MAX_LENGTH_PHONENUMBER = 13
+ let ACCEPTABLE_NUMBERS     = "0123456789"
+
 let pulsaData: [PulsaItemView] = [
     .listPulsa(data: PulsaModel(id: 1, nominal: 5000)),
     .listPulsa(data: PulsaModel(id: 2, nominal: 10000)),

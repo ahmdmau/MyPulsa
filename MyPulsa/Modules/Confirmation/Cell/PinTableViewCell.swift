@@ -37,7 +37,7 @@ class PinTableViewCell: UITableViewCell, CellProtocol {
         pinTextField.makeRightIcon(placeholder: "PIN",
                                    image: UIImage(named: "visibility")!,
                                    cell: self,
-                                selector: #selector(passwordVisibilityPressed))
+                                   selector: #selector(passwordVisibilityPressed))
     }
     
     @objc private func passwordVisibilityPressed() {
@@ -46,14 +46,14 @@ class PinTableViewCell: UITableViewCell, CellProtocol {
             pinTextField.makeRightIcon(placeholder: "PIN",
                                        image: UIImage(named: "visibility")!,
                                        cell: self,
-                                    selector: #selector(passwordVisibilityPressed))
+                                       selector: #selector(passwordVisibilityPressed))
             pinTextField.isSecureTextEntry = true
         } else {
             isPasswordVisible = true
             pinTextField.makeRightIcon(placeholder: "PIN",
                                        image: UIImage(named: "visibility-off")!,
                                        cell: self,
-                                    selector: #selector(passwordVisibilityPressed))
+                                       selector: #selector(passwordVisibilityPressed))
             pinTextField.isSecureTextEntry = false
         }
     }
@@ -69,8 +69,9 @@ class PinTableViewCell: UITableViewCell, CellProtocol {
 // MARK: - UITextField
 extension PinTableViewCell: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let invalidCharacters =
-        CharacterSet(charactersIn: "0123456789").inverted
-        return (string.rangeOfCharacter(from: invalidCharacters) == nil)
+        let newLength: Int = textField.text!.count + string.count - range.length
+        let numberOnly = NSCharacterSet.init(charactersIn: ACCEPTABLE_NUMBERS).inverted
+        let strValid = string.rangeOfCharacter(from: numberOnly) == nil
+        return (strValid && (newLength <= 6))
     }
 }
