@@ -65,6 +65,9 @@
 		A5397CFC29ABAD2F00329D06 /* PinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */; };
 		A5397CFE29ABB51200329D06 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */; };
 		A5397D0029ABBBAB00329D06 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */; };
+		A5397D0329ABBD9300329D06 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A5397D0229ABBD9300329D06 /* Toast */; };
+		A5397D0529ABBDD800329D06 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0429ABBDD800329D06 /* UIViewController+Extensions.swift */; };
+		A5397D0729ABBEBF00329D06 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0629ABBEBF00329D06 /* OrderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +125,8 @@
 		A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinTableViewCell.xib; sourceTree = "<group>"; };
 		A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		A5397D0429ABBDD800329D06 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A5397D0629ABBEBF00329D06 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,7 @@
 				A51055D329A9C65B00F0067C /* Tabman in Frameworks */,
 				A5397CD329AB0F5F00329D06 /* RxDataSources in Frameworks */,
 				A5397CCE29AB0EF900329D06 /* RxSwift in Frameworks */,
+				A5397D0329ABBD9300329D06 /* Toast in Frameworks */,
 				A510560229AA020A00F0067C /* TweeTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +222,7 @@
 				A5397CEA29AB7C0900329D06 /* UIView+Extensions.swift */,
 				A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */,
 				A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */,
+				A5397D0429ABBDD800329D06 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 				A51055F529A9D1C600F0067C /* MainPageModel.swift */,
 				A5397CBC29AB088400329D06 /* PulsaModel.swift */,
 				A5397CBE29AB08AD00329D06 /* PromoModel.swift */,
+				A5397D0629ABBEBF00329D06 /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 				A5397CCD29AB0EF900329D06 /* RxSwift */,
 				A5397CD029AB0F5F00329D06 /* Differentiator */,
 				A5397CD229AB0F5F00329D06 /* RxDataSources */,
+				A5397D0229ABBD9300329D06 /* Toast */,
 			);
 			productName = MyPulsa;
 			productReference = A51055BA29A9C57500F0067C /* MyPulsa.app */;
@@ -402,6 +411,7 @@
 				A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */,
 				A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				A5397D0129ABBD9300329D06 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = A51055BB29A9C57500F0067C /* Products */;
 			projectDirPath = "";
@@ -450,6 +460,7 @@
 				A5397CED29AB82A400329D06 /* RoundedShadowView.swift in Sources */,
 				A51055EE29A9CE2900F0067C /* PulsaViewController.swift in Sources */,
 				A51055D729A9C6F400F0067C /* MainViewController.swift in Sources */,
+				A5397D0529ABBDD800329D06 /* UIViewController+Extensions.swift in Sources */,
 				A51055E929A9CB1100F0067C /* UIColor+Extensions.swift in Sources */,
 				A5397CE729AB78A500329D06 /* BaseViewController.swift in Sources */,
 				A51055BE29A9C57500F0067C /* AppDelegate.swift in Sources */,
@@ -478,6 +489,7 @@
 				A5397CE529AB787900329D06 /* CustomBarButton.swift in Sources */,
 				A51055E729A9CA8E00F0067C /* UIFont+Extensions.swift in Sources */,
 				A51055E529A9CA7300F0067C /* UINavigationController+Extensions.swift in Sources */,
+				A5397D0729ABBEBF00329D06 /* OrderModel.swift in Sources */,
 				A5397CBD29AB088400329D06 /* PulsaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +740,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A5397D0129ABBD9300329D06 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -760,6 +780,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		A5397D0229ABBD9300329D06 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5397D0129ABBD9300329D06 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

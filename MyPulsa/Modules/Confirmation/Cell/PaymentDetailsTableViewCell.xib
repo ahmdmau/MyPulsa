@@ -143,6 +143,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nominal" destination="0Ac-Dj-ZGJ" id="1tW-ui-BwX"/>
+                <outlet property="orderName" destination="gUq-R4-LN1" id="7cL-NY-M8Y"/>
+                <outlet property="totalLabel" destination="DJ4-Ha-428" id="yPk-TY-RaW"/>
+            </connections>
             <point key="canvasLocation" x="112.97709923664122" y="88.380281690140848"/>
         </tableViewCell>
     </objects>

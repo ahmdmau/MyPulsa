@@ -9,10 +9,21 @@ import UIKit
 
 class ConfirmationViewController: BaseViewController {
     
+    @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topView: UIView!
     
+    var orderModel: OrderModel
     var pin = ""
+    
+    init(orderModel: OrderModel) {
+        self.orderModel = orderModel
+        super.init(nibName: "ConfirmationViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +32,7 @@ class ConfirmationViewController: BaseViewController {
         self.addKeyboardObserver(scrollView: tableView)
         self.hideKeyboardWhenTappedAround()
         setupTableView()
+        setupLabel()
         topView.addShadowRegular()
         
     }
@@ -28,11 +40,6 @@ class ConfirmationViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.removeKeyboardObserver()
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        //        sectionBackgroundView.roundCorners(corners: [.topLeft, .topRight], radius: 6)
     }
     
     private func setupTableView() {
@@ -44,9 +51,13 @@ class ConfirmationViewController: BaseViewController {
         tableView.contentInsetAdjustmentBehavior = .never
     }
     
+    private func setupLabel() {
+        phoneNumberLabel.text = orderModel.phoneNumber
+    }
+    
     @IBAction func payButtonTapped(_ sender: UIButton) {
         if pin.isEmpty {
-            print("Empty")
+            self.showErrorToast(message: "Pin is required, please input your pin")
         } else {
             print("False")
         }
@@ -69,7 +80,7 @@ extension ConfirmationViewController: UITableViewDelegate, UITableViewDataSource
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PaymentDetailsTableViewCell.identifier, for: indexPath) as? PaymentDetailsTableViewCell else {
                 return UITableViewCell()
             }
-            
+            cell.setup(with: orderModel)
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PinTableViewCell.identifier, for: indexPath) as? PinTableViewCell else {

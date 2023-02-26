@@ -126,6 +126,7 @@ extension PulsaViewController: UITableViewDelegate {
 // MARK: - Pulsa Item Delegate
 extension PulsaViewController: PulsaItemDelegate {
     func didSelect(data: PulsaModel) {
-        self.navigationController?.pushViewController(ConfirmationViewController(), animated: true)
+        let orderModel = OrderModel(id: 1, orderName: "Pulsa", nominal: data.nominal, phoneNumber: phoneTextField.text ?? "")
+        self.navigationController?.pushViewController(ConfirmationViewController(orderModel: orderModel), animated: true)
     }
 }

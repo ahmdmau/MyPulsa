@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationViewController" customModule="MyPulsa" customModuleProvider="target">
             <connections>
+                <outlet property="phoneNumberLabel" destination="Iat-lj-iOQ" id="jMX-FQ-fL6"/>
                 <outlet property="tableView" destination="Kz9-V4-Pey" id="4zc-dJ-1A1"/>
                 <outlet property="topView" destination="fAT-5P-1LN" id="ysB-6b-I2v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
