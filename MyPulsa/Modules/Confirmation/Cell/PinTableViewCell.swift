@@ -26,6 +26,8 @@ class PinTableViewCell: UITableViewCell, CellProtocol {
     override func awakeFromNib() {
         super.awakeFromNib()
         pinTextField.isSecureTextEntry = !isPasswordVisible
+        pinTextField.keyboardType = .numberPad
+        pinTextField.delegate = self
         tncLabel.text = "By continuing, I agree with loan agreement of Kredivo"
         tncLabel.halfTextColorChange(fullText: "By continuing, I agree with loan agreement of Kredivo", changeText: "loan agreement of Kredivo", color: UIColor.primaryColor)
     }
@@ -62,4 +64,13 @@ class PinTableViewCell: UITableViewCell, CellProtocol {
         delegate?.didPinChanged(pin: pin)
     }
     
+}
+
+// MARK: - UITextField
+extension PinTableViewCell: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let invalidCharacters =
+        CharacterSet(charactersIn: "0123456789").inverted
+        return (string.rangeOfCharacter(from: invalidCharacters) == nil)
+    }
 }

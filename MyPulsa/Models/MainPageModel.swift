@@ -14,5 +14,5 @@ struct MainPageModel {
 
 let listViewController: [MainPageModel] = [
     MainPageModel(title: "Pulsa", viewController: PulsaViewController(viewModel: PulsaViewModel())),
-    MainPageModel(title: "Data Package", viewController: DataPackageViewController()),
+    MainPageModel(title: "Data Package", viewController: DataPackageViewController(viewModel: DataPackageViewModel())),
 ]

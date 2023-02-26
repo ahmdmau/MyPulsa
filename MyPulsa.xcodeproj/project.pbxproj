@@ -45,7 +45,6 @@
 		A5397CCE29AB0EF900329D06 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CCD29AB0EF900329D06 /* RxSwift */; };
 		A5397CD129AB0F5F00329D06 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CD029AB0F5F00329D06 /* Differentiator */; };
 		A5397CD329AB0F5F00329D06 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CD229AB0F5F00329D06 /* RxDataSources */; };
-		A5397CD529AB114F00329D06 /* PulsaDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CD429AB114F00329D06 /* PulsaDataSources.swift */; };
 		A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */; };
 		A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */; };
 		A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CDA29AB41B900329D06 /* Double+Extensions.swift */; };
@@ -74,6 +73,11 @@
 		A5397D1229ABC3F100329D06 /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */; };
 		A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */; };
 		A5397D1629ABC65500329D06 /* InfoOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */; };
+		A5FA29B529ABCCE300476DA3 /* DataPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B429ABCCE300476DA3 /* DataPackageViewModel.swift */; };
+		A5FA29B729ABCD5E00476DA3 /* DataPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B629ABCD5E00476DA3 /* DataPackageModel.swift */; };
+		A5FA29BA29ABCDA900476DA3 /* DataPackageSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B929ABCDA900476DA3 /* DataPackageSectionType.swift */; };
+		A5FA29BE29ABD07600476DA3 /* DataPackageItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */; };
+		A5FA29BF29ABD07600476DA3 /* DataPackageItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,7 +115,6 @@
 		A5397CC129AB08EC00329D06 /* PulsaSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaSectionType.swift; sourceTree = "<group>"; };
 		A5397CC429AB094400329D06 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		A5397CC829AB0D0500329D06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A5397CD429AB114F00329D06 /* PulsaDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaDataSources.swift; sourceTree = "<group>"; };
 		A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		A5397CDA29AB41B900329D06 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
@@ -139,6 +142,11 @@
 		A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOrderTableViewCell.swift; sourceTree = "<group>"; };
 		A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoOrderTableViewCell.xib; sourceTree = "<group>"; };
+		A5FA29B429ABCCE300476DA3 /* DataPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageViewModel.swift; sourceTree = "<group>"; };
+		A5FA29B629ABCD5E00476DA3 /* DataPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageModel.swift; sourceTree = "<group>"; };
+		A5FA29B929ABCDA900476DA3 /* DataPackageSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageSectionType.swift; sourceTree = "<group>"; };
+		A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageItemTableViewCell.swift; sourceTree = "<group>"; };
+		A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPackageItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,13 +203,12 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A5397D1829ABCBB000329D06 /* DataPackage */,
 				A5397D0D29ABC30700329D06 /* Cell */,
 				A5397D0829ABC0DC00329D06 /* OrderStatus */,
 				A5397CDF29AB5A2300329D06 /* Confirmation */,
 				A510560C29AA523200F0067C /* Pulsa */,
 				A51055D529A9C6F400F0067C /* MainViewController.swift */,
-				A51055F029A9CE3300F0067C /* DataPackageViewController.swift */,
-				A51055F129A9CE3300F0067C /* DataPackageViewController.xib */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 				A5397CBC29AB088400329D06 /* PulsaModel.swift */,
 				A5397CBE29AB08AD00329D06 /* PromoModel.swift */,
 				A5397D0629ABBEBF00329D06 /* OrderModel.swift */,
+				A5FA29B629ABCD5E00476DA3 /* DataPackageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,7 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				A5397CC129AB08EC00329D06 /* PulsaSectionType.swift */,
-				A5397CD429AB114F00329D06 /* PulsaDataSources.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -391,6 +398,35 @@
 				A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */,
 				A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */,
 				A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A5397D1829ABCBB000329D06 /* DataPackage */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA29BB29ABD06500476DA3 /* Cell */,
+				A5FA29B829ABCD9E00476DA3 /* Data */,
+				A51055F029A9CE3300F0067C /* DataPackageViewController.swift */,
+				A51055F129A9CE3300F0067C /* DataPackageViewController.xib */,
+				A5FA29B429ABCCE300476DA3 /* DataPackageViewModel.swift */,
+			);
+			path = DataPackage;
+			sourceTree = "<group>";
+		};
+		A5FA29B829ABCD9E00476DA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA29B929ABCDA900476DA3 /* DataPackageSectionType.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A5FA29BB29ABD06500476DA3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */,
+				A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -471,6 +507,7 @@
 			files = (
 				A5397CF229AB8AAC00329D06 /* WarningTableViewCell.xib in Resources */,
 				A51055CA29A9C57800F0067C /* LaunchScreen.storyboard in Resources */,
+				A5FA29BF29ABD07600476DA3 /* DataPackageItemTableViewCell.xib in Resources */,
 				A51055E129A9C95A00F0067C /* Inter-Bold.otf in Resources */,
 				A51055E029A9C95A00F0067C /* Inter-Medium.otf in Resources */,
 				A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */,
@@ -505,13 +542,17 @@
 				A5397CED29AB82A400329D06 /* RoundedShadowView.swift in Sources */,
 				A51055EE29A9CE2900F0067C /* PulsaViewController.swift in Sources */,
 				A51055D729A9C6F400F0067C /* MainViewController.swift in Sources */,
+				A5FA29B529ABCCE300476DA3 /* DataPackageViewModel.swift in Sources */,
+				A5FA29B729ABCD5E00476DA3 /* DataPackageModel.swift in Sources */,
 				A5397D0529ABBDD800329D06 /* UIViewController+Extensions.swift in Sources */,
 				A51055E929A9CB1100F0067C /* UIColor+Extensions.swift in Sources */,
 				A5397CE729AB78A500329D06 /* BaseViewController.swift in Sources */,
 				A51055BE29A9C57500F0067C /* AppDelegate.swift in Sources */,
 				A5397CF529AB8AE800329D06 /* PaymentDetailsTableViewCell.swift in Sources */,
 				A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */,
+				A5FA29BA29ABCDA900476DA3 /* DataPackageSectionType.swift in Sources */,
 				A5397D0B29ABC0F500329D06 /* OrderStatusViewController.swift in Sources */,
+				A5FA29BE29ABD07600476DA3 /* DataPackageItemTableViewCell.swift in Sources */,
 				A5397CC229AB08EC00329D06 /* PulsaSectionType.swift in Sources */,
 				A5397D0029ABBBAB00329D06 /* UILabel+Extensions.swift in Sources */,
 				A5397D1129ABC3F100329D06 /* OrderDetailsTableViewCell.swift in Sources */,
@@ -525,7 +566,6 @@
 				A5397CF829ABABA400329D06 /* DashedHorizontalView.swift in Sources */,
 				A51055F229A9CE3300F0067C /* DataPackageViewController.swift in Sources */,
 				A5397CC929AB0D0500329D06 /* Constants.swift in Sources */,
-				A5397CD529AB114F00329D06 /* PulsaDataSources.swift in Sources */,
 				A510560629AA08D800F0067C /* PulsaItemTableViewCell.swift in Sources */,
 				A5397CBB29AB057200329D06 /* SnappingLayout.swift in Sources */,
 				A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */,

@@ -36,6 +36,9 @@ class OrderStatusViewController: BaseViewController {
         tableView.register(InfoOrderTableViewCell.nib(), forCellReuseIdentifier: InfoOrderTableViewCell.identifier)
     }
     
+    @IBAction func okButtonTapped(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }
 
 extension OrderStatusViewController: UITableViewDelegate, UITableViewDataSource {

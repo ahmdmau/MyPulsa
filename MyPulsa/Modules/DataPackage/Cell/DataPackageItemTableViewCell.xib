@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.otf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="DataPackageItemTableViewCell" customModule="MyPulsa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwc-Ga-KDb">
+                        <rect key="frame" x="0.0" y="68" width="320" height="1"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VcP-py-SDY"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="djQ-ih-c3x"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tgd-v5-itA">
+                        <rect key="frame" x="16" y="16" width="288" height="36"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-Jb-C52">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paket Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euS-JU-3q3">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="16.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-i8-bzX">
+                                        <rect key="frame" x="0.0" y="20.666666666666664" width="174" height="15.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="13"/>
+                                        <color key="textColor" red="0.29299111155282076" green="0.29299111155282076" blue="0.29299111155282076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-QE-Div">
+                                <rect key="frame" x="190" y="0.0" width="98" height="36"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bOe-nt-gjo"/>
+                                    <constraint firstAttribute="width" constant="98" id="lxO-f7-PVD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Rp25.000"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lwc-Ga-KDb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3MG-DX-gdC"/>
+                    <constraint firstItem="tgd-v5-itA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="BzF-wb-rez"/>
+                    <constraint firstItem="Lwc-Ga-KDb" firstAttribute="top" secondItem="tgd-v5-itA" secondAttribute="bottom" constant="16" id="TLJ-68-fZs"/>
+                    <constraint firstAttribute="bottom" secondItem="Lwc-Ga-KDb" secondAttribute="bottom" id="eai-Ll-ggo"/>
+                    <constraint firstAttribute="trailing" secondItem="Lwc-Ga-KDb" secondAttribute="trailing" id="msd-KA-cfx"/>
+                    <constraint firstAttribute="trailing" secondItem="tgd-v5-itA" secondAttribute="trailing" constant="16" id="svo-NT-kfa"/>
+                    <constraint firstItem="tgd-v5-itA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zem-41-Ice"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buyButton" destination="LQ4-QE-Div" id="LaL-RH-aG1"/>
+                <outlet property="packageDataNameLabel" destination="euS-JU-3q3" id="ypw-Qh-ovR"/>
+                <outlet property="priceLabel" destination="6dw-i8-bzX" id="bCM-BC-TEu"/>
+            </connections>
+            <point key="canvasLocation" x="187.78625954198472" y="29.577464788732396"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
