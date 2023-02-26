@@ -203,8 +203,8 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A5397D1829ABCBB000329D06 /* DataPackage */,
 				A5397D0D29ABC30700329D06 /* Cell */,
+				A5397D1829ABCBB000329D06 /* DataPackage */,
 				A5397D0829ABC0DC00329D06 /* OrderStatus */,
 				A5397CDF29AB5A2300329D06 /* Confirmation */,
 				A510560C29AA523200F0067C /* Pulsa */,
@@ -291,10 +291,6 @@
 			children = (
 				A510560429AA08D800F0067C /* PulsaItemTableViewCell.swift */,
 				A510560529AA08D800F0067C /* PulsaItemTableViewCell.xib */,
-				A510561429AA53AB00F0067C /* PromoTableViewCell.swift */,
-				A510561529AA53AB00F0067C /* PromoTableViewCell.xib */,
-				A5397CAF29AA575F00329D06 /* PromoItemCollectionViewCell.swift */,
-				A5397CB029AA575F00329D06 /* PromoItemCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -385,6 +381,10 @@
 		A5397D0D29ABC30700329D06 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A510561429AA53AB00F0067C /* PromoTableViewCell.swift */,
+				A510561529AA53AB00F0067C /* PromoTableViewCell.xib */,
+				A5397CAF29AA575F00329D06 /* PromoItemCollectionViewCell.swift */,
+				A5397CB029AA575F00329D06 /* PromoItemCollectionViewCell.xib */,
 				A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */,
 				A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */,
 			);
