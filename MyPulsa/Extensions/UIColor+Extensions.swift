@@ -21,4 +21,9 @@ extension UIColor {
         return UIColor(red: 180.0 / 255.0, green: 180.0 / 255.0, blue: 180.0 / 255.0, alpha: 1.0)
     }
     
+    static var shadowColor: UIColor {
+        return UIColor(red: 202 / 255.0, green: 202 / 255.0, blue: 202 / 255.0, alpha: 0.25)
+    }
+    
+    
 }

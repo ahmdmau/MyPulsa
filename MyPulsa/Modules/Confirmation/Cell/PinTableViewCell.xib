@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.otf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="KGk-i7-Jjw" customClass="PinTableViewCell" customModule="MyPulsa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyz-8d-f5U" customClass="RoundedShadowView" customModule="MyPulsa" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="288" height="154"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-kx-aCS">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredivo Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izj-08-5ff">
+                                        <rect key="frame" x="16" y="16" width="258" height="20"/>
+                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                        <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="izj-08-5ff" firstAttribute="top" secondItem="2RA-kx-aCS" secondAttribute="top" constant="16" id="IPj-nt-gQe"/>
+                                    <constraint firstItem="izj-08-5ff" firstAttribute="leading" secondItem="2RA-kx-aCS" secondAttribute="leading" constant="16" id="RAC-6v-huc"/>
+                                    <constraint firstAttribute="trailing" secondItem="izj-08-5ff" secondAttribute="trailing" constant="14" id="cU0-TX-yFf"/>
+                                    <constraint firstAttribute="bottom" secondItem="izj-08-5ff" secondAttribute="bottom" constant="16" id="iEA-aY-2gg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-XA-kd6">
+                                <rect key="frame" x="16" y="60" width="256" height="15"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBr-bI-Tmb">
+                                <rect key="frame" x="16" y="79" width="256" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9go-8S-5fB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <connections>
+                                    <action selector="pinEditingChanged:" destination="KGk-i7-Jjw" eventType="editingChanged" id="5sY-MX-kyB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, I agree with loan agreement of Kredivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hk-q9-0VY">
+                                <rect key="frame" x="16" y="125" width="256" height="13"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Hk-q9-0VY" secondAttribute="trailing" constant="16" id="2e2-KQ-TuL"/>
+                            <constraint firstItem="9Hk-q9-0VY" firstAttribute="top" secondItem="ZBr-bI-Tmb" secondAttribute="bottom" constant="6" id="A3n-je-hNe"/>
+                            <constraint firstItem="F3l-XA-kd6" firstAttribute="leading" secondItem="Pyz-8d-f5U" secondAttribute="leading" constant="16" id="E3p-H6-JZC"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBr-bI-Tmb" secondAttribute="trailing" constant="16" id="Ueh-3k-0wW"/>
+                            <constraint firstAttribute="bottom" secondItem="9Hk-q9-0VY" secondAttribute="bottom" constant="16" id="VIt-kQ-Pu2"/>
+                            <constraint firstAttribute="trailing" secondItem="F3l-XA-kd6" secondAttribute="trailing" constant="16" id="ZIl-fY-43w"/>
+                            <constraint firstItem="2RA-kx-aCS" firstAttribute="leading" secondItem="Pyz-8d-f5U" secondAttribute="leading" id="aLp-vW-Env"/>
+                            <constraint firstItem="9Hk-q9-0VY" firstAttribute="leading" secondItem="Pyz-8d-f5U" secondAttribute="leading" constant="16" id="azl-5k-Bcf"/>
+                            <constraint firstItem="F3l-XA-kd6" firstAttribute="top" secondItem="2RA-kx-aCS" secondAttribute="bottom" constant="8" id="iwN-RQ-QqP"/>
+                            <constraint firstItem="2RA-kx-aCS" firstAttribute="top" secondItem="Pyz-8d-f5U" secondAttribute="top" id="nVu-cL-xhf"/>
+                            <constraint firstItem="ZBr-bI-Tmb" firstAttribute="leading" secondItem="Pyz-8d-f5U" secondAttribute="leading" constant="16" id="na6-QM-Drm"/>
+                            <constraint firstAttribute="trailing" secondItem="2RA-kx-aCS" secondAttribute="trailing" id="oLP-Ll-r5a"/>
+                            <constraint firstItem="ZBr-bI-Tmb" firstAttribute="top" secondItem="F3l-XA-kd6" secondAttribute="bottom" constant="4" id="pql-XL-nZ2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Pyz-8d-f5U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ejb-AN-PI8"/>
+                    <constraint firstAttribute="bottom" secondItem="Pyz-8d-f5U" secondAttribute="bottom" constant="16" id="Sgf-xH-NfH"/>
+                    <constraint firstAttribute="trailing" secondItem="Pyz-8d-f5U" secondAttribute="trailing" constant="16" id="Vdt-F9-u7K"/>
+                    <constraint firstItem="Pyz-8d-f5U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="X35-M9-39B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pinTextField" destination="ZBr-bI-Tmb" id="GGL-6X-x10"/>
+                <outlet property="tncLabel" destination="9Hk-q9-0VY" id="f7K-pC-3h0"/>
+            </connections>
+            <point key="canvasLocation" x="112.97709923664122" y="81.690140845070431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

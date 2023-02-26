@@ -11,7 +11,7 @@ import RxCocoa
 
 final class PulsaViewModel {
     var items = BehaviorRelay<[PulsaViewSection]>(value: [])
-    let dataSource = PulsaDataSources.dataSource()
+//    let dataSource = PulsaDataSources.dataSource()
     
     func fetchPulsaData(phoneNumber: String) {
         if phoneNumber.count < 4 {

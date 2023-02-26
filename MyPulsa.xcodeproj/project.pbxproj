@@ -49,6 +49,22 @@
 		A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */; };
 		A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */; };
 		A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CDA29AB41B900329D06 /* Double+Extensions.swift */; };
+		A5397CE229AB5A3C00329D06 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CE029AB5A3C00329D06 /* ConfirmationViewController.swift */; };
+		A5397CE329AB5A3C00329D06 /* ConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CE129AB5A3C00329D06 /* ConfirmationViewController.xib */; };
+		A5397CE529AB787900329D06 /* CustomBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CE429AB787900329D06 /* CustomBarButton.swift */; };
+		A5397CE729AB78A500329D06 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CE629AB78A500329D06 /* BaseViewController.swift */; };
+		A5397CE929AB78DD00329D06 /* NavigationBarButtonClickable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CE829AB78DC00329D06 /* NavigationBarButtonClickable.swift */; };
+		A5397CEB29AB7C0900329D06 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CEA29AB7C0900329D06 /* UIView+Extensions.swift */; };
+		A5397CED29AB82A400329D06 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CEC29AB82A400329D06 /* RoundedShadowView.swift */; };
+		A5397CF129AB8AAC00329D06 /* WarningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CEF29AB8AAC00329D06 /* WarningTableViewCell.swift */; };
+		A5397CF229AB8AAC00329D06 /* WarningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CF029AB8AAC00329D06 /* WarningTableViewCell.xib */; };
+		A5397CF529AB8AE800329D06 /* PaymentDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */; };
+		A5397CF629AB8AE800329D06 /* PaymentDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */; };
+		A5397CF829ABABA400329D06 /* DashedHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CF729ABABA400329D06 /* DashedHorizontalView.swift */; };
+		A5397CFB29ABAD2F00329D06 /* PinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CF929ABAD2F00329D06 /* PinTableViewCell.swift */; };
+		A5397CFC29ABAD2F00329D06 /* PinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */; };
+		A5397CFE29ABB51200329D06 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */; };
+		A5397D0029ABBBAB00329D06 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +106,22 @@
 		A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		A5397CDA29AB41B900329D06 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		A5397CE029AB5A3C00329D06 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		A5397CE129AB5A3C00329D06 /* ConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationViewController.xib; sourceTree = "<group>"; };
+		A5397CE429AB787900329D06 /* CustomBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarButton.swift; sourceTree = "<group>"; };
+		A5397CE629AB78A500329D06 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5397CE829AB78DC00329D06 /* NavigationBarButtonClickable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonClickable.swift; sourceTree = "<group>"; };
+		A5397CEA29AB7C0900329D06 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A5397CEC29AB82A400329D06 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		A5397CEF29AB8AAC00329D06 /* WarningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningTableViewCell.swift; sourceTree = "<group>"; };
+		A5397CF029AB8AAC00329D06 /* WarningTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarningTableViewCell.xib; sourceTree = "<group>"; };
+		A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		A5397CF729ABABA400329D06 /* DashedHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedHorizontalView.swift; sourceTree = "<group>"; };
+		A5397CF929ABAD2F00329D06 /* PinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTableViewCell.swift; sourceTree = "<group>"; };
+		A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinTableViewCell.xib; sourceTree = "<group>"; };
+		A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +177,7 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A5397CDF29AB5A2300329D06 /* Confirmation */,
 				A510560C29AA523200F0067C /* Pulsa */,
 				A51055D529A9C6F400F0067C /* MainViewController.swift */,
 				A51055F029A9CE3300F0067C /* DataPackageViewController.swift */,
@@ -180,6 +213,9 @@
 				A51055E829A9CB1100F0067C /* UIColor+Extensions.swift */,
 				A51055EA29A9CCCC00F0067C /* UIImage+Extensions.swift */,
 				A5397CDA29AB41B900329D06 /* Double+Extensions.swift */,
+				A5397CEA29AB7C0900329D06 /* UIView+Extensions.swift */,
+				A5397CFD29ABB51200329D06 /* UITextField+Extensions.swift */,
+				A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +247,11 @@
 			children = (
 				A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */,
 				A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */,
+				A5397CE429AB787900329D06 /* CustomBarButton.swift */,
+				A5397CE629AB78A500329D06 /* BaseViewController.swift */,
+				A5397CE829AB78DC00329D06 /* NavigationBarButtonClickable.swift */,
+				A5397CEC29AB82A400329D06 /* RoundedShadowView.swift */,
+				A5397CF729ABABA400329D06 /* DashedHorizontalView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -279,6 +320,29 @@
 				A5397CC829AB0D0500329D06 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		A5397CDF29AB5A2300329D06 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CEE29AB8A7A00329D06 /* Cell */,
+				A5397CE029AB5A3C00329D06 /* ConfirmationViewController.swift */,
+				A5397CE129AB5A3C00329D06 /* ConfirmationViewController.xib */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		A5397CEE29AB8A7A00329D06 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CEF29AB8AAC00329D06 /* WarningTableViewCell.swift */,
+				A5397CF029AB8AAC00329D06 /* WarningTableViewCell.xib */,
+				A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */,
+				A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */,
+				A5397CF929ABAD2F00329D06 /* PinTableViewCell.swift */,
+				A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,18 +417,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5397CF229AB8AAC00329D06 /* WarningTableViewCell.xib in Resources */,
 				A51055CA29A9C57800F0067C /* LaunchScreen.storyboard in Resources */,
 				A51055E129A9C95A00F0067C /* Inter-Bold.otf in Resources */,
 				A51055E029A9C95A00F0067C /* Inter-Medium.otf in Resources */,
 				A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */,
 				A5397CB229AA575F00329D06 /* PromoItemCollectionViewCell.xib in Resources */,
 				A51055DF29A9C95A00F0067C /* Inter-Regular.otf in Resources */,
+				A5397CF629AB8AE800329D06 /* PaymentDetailsTableViewCell.xib in Resources */,
 				A51055C729A9C57800F0067C /* Assets.xcassets in Resources */,
 				A51055DE29A9C95A00F0067C /* Inter-SemiBold.otf in Resources */,
 				A510561729AA53AB00F0067C /* PromoTableViewCell.xib in Resources */,
 				A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */,
 				A51055EF29A9CE2900F0067C /* PulsaViewController.xib in Resources */,
+				A5397CE329AB5A3C00329D06 /* ConfirmationViewController.xib in Resources */,
 				A510560729AA08D800F0067C /* PulsaItemTableViewCell.xib in Resources */,
+				A5397CFC29ABAD2F00329D06 /* PinTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,17 +444,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */,
+				A5397CF129AB8AAC00329D06 /* WarningTableViewCell.swift in Sources */,
 				A5397CB529AA578600329D06 /* CellProtocol.swift in Sources */,
+				A5397CFB29ABAD2F00329D06 /* PinTableViewCell.swift in Sources */,
+				A5397CED29AB82A400329D06 /* RoundedShadowView.swift in Sources */,
 				A51055EE29A9CE2900F0067C /* PulsaViewController.swift in Sources */,
 				A51055D729A9C6F400F0067C /* MainViewController.swift in Sources */,
 				A51055E929A9CB1100F0067C /* UIColor+Extensions.swift in Sources */,
+				A5397CE729AB78A500329D06 /* BaseViewController.swift in Sources */,
 				A51055BE29A9C57500F0067C /* AppDelegate.swift in Sources */,
+				A5397CF529AB8AE800329D06 /* PaymentDetailsTableViewCell.swift in Sources */,
 				A5397CC229AB08EC00329D06 /* PulsaSectionType.swift in Sources */,
+				A5397D0029ABBBAB00329D06 /* UILabel+Extensions.swift in Sources */,
+				A5397CE929AB78DD00329D06 /* NavigationBarButtonClickable.swift in Sources */,
 				A510560E29AA525100F0067C /* PulsaViewModel.swift in Sources */,
 				A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */,
+				A5397CE229AB5A3C00329D06 /* ConfirmationViewController.swift in Sources */,
 				A5397CBF29AB08AD00329D06 /* PromoModel.swift in Sources */,
 				A5397CC529AB094400329D06 /* Loadable.swift in Sources */,
 				A5397CB129AA575F00329D06 /* PromoItemCollectionViewCell.swift in Sources */,
+				A5397CF829ABABA400329D06 /* DashedHorizontalView.swift in Sources */,
 				A51055F229A9CE3300F0067C /* DataPackageViewController.swift in Sources */,
 				A5397CC929AB0D0500329D06 /* Constants.swift in Sources */,
 				A5397CD529AB114F00329D06 /* PulsaDataSources.swift in Sources */,
@@ -395,7 +472,10 @@
 				A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */,
 				A510561629AA53AB00F0067C /* PromoTableViewCell.swift in Sources */,
 				A51055EB29A9CCCC00F0067C /* UIImage+Extensions.swift in Sources */,
+				A5397CFE29ABB51200329D06 /* UITextField+Extensions.swift in Sources */,
+				A5397CEB29AB7C0900329D06 /* UIView+Extensions.swift in Sources */,
 				A51055C029A9C57500F0067C /* SceneDelegate.swift in Sources */,
+				A5397CE529AB787900329D06 /* CustomBarButton.swift in Sources */,
 				A51055E729A9CA8E00F0067C /* UIFont+Extensions.swift in Sources */,
 				A51055E529A9CA7300F0067C /* UINavigationController+Extensions.swift in Sources */,
 				A5397CBD29AB088400329D06 /* PulsaModel.swift in Sources */,

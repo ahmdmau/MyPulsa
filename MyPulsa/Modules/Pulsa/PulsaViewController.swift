@@ -9,6 +9,8 @@ import UIKit
 import TweeTextField
 import RxSwift
 import RxCocoa
+import RxDataSources
+import Differentiator
 
 class PulsaViewController: UIViewController {
     
@@ -42,7 +44,7 @@ extension PulsaViewController {
     
     private func setupTextField() {
         phoneTextField.text = PhoneNumber.defaultPhoneNumber
-        
+        phoneTextField.delegate = self
         phoneTextField.rx
             .text
             .observe(on: MainScheduler.asyncInstance)
@@ -56,8 +58,8 @@ extension PulsaViewController {
     private func bindTableView() {
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
         viewModel.items
-                    .bind(to: tableView.rx.items(dataSource: viewModel.dataSource))
-                    .disposed(by: disposeBag)
+            .bind(to: tableView.rx.items(dataSource: dataSource()))
+            .disposed(by: disposeBag)
     }
     
     private func setupTableView() {
@@ -71,15 +73,59 @@ extension PulsaViewController {
     
 }
 
+extension PulsaViewController {
+    func dataSource() -> RxTableViewSectionedReloadDataSource<PulsaViewSection> {
+        return RxTableViewSectionedReloadDataSource<PulsaViewSection>(configureCell: { dataSource, tableView, indexPath, _ in
+            switch dataSource[indexPath] {
+            case .listPulsa(let data):
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PulsaItemTableViewCell.identifier, for: indexPath) as? PulsaItemTableViewCell else {
+                    return UITableViewCell()
+                }
+                cell.setup(with: data)
+                cell.delegate = self
+                return cell
+            case .promos(let promoData):
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoTableViewCell.identifier, for: indexPath) as? PromoTableViewCell else {
+                    return UITableViewCell()
+                }
+                cell.promos = promoData
+                return cell
+            case .empty:
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier, for: indexPath) as? EmptyTableViewCell else {
+                    return UITableViewCell()
+                }
+                
+                return cell
+            }
+        })
+    }
+}
+
+// MARK: - UITextField
+extension PulsaViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let invalidCharacters =
+        CharacterSet(charactersIn: "0123456789").inverted
+        return (string.rangeOfCharacter(from: invalidCharacters) == nil)
+    }
+}
+
 // MARK: - UITableView Protocol
 extension PulsaViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return .leastNonzeroMagnitude
     }
-
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 8
     }
+    
+}
 
+// MARK: - Pulsa Item Delegate
+extension PulsaViewController: PulsaItemDelegate {
+    func didSelect(data: PulsaModel) {
+        self.navigationController?.pushViewController(ConfirmationViewController(), animated: true)
+    }
 }
