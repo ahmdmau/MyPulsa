@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PulsaViewController" customModule="MyPulsa" customModuleProvider="target">
+            <connections>
+                <outlet property="phoneTextField" destination="mQc-FX-617" id="4An-JO-71S"/>
+                <outlet property="tableView" destination="5Oh-qR-lLB" id="OfZ-4B-z8T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-hN-xIA">
+                    <rect key="frame" x="0.0" y="59" width="393" height="74"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indosat" translatesAutoresizingMaskIntoConstraints="NO" id="Wxh-gj-Kqq">
+                            <rect key="frame" x="16" y="16" width="42" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="BUu-7u-IW5"/>
+                                <constraint firstAttribute="width" constant="42" id="reS-4b-WCp"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-FX-617">
+                            <rect key="frame" x="74" y="16" width="263" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="YVQ-oB-7kz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Mobile Number"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                    <color key="value" red="0.95294117649999999" green="0.43529411759999997" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" white="0.81999999999999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="minimumPlaceholderFontSize">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="originalPlaceholderFontSize">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="0.81999999999999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderDuration">
+                                    <real key="value" value="0.29999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNI-hN-Z7l">
+                            <rect key="frame" x="353" y="25" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="22Q-ag-3Ni"/>
+                                <constraint firstAttribute="width" constant="24" id="yCV-Vw-NaR"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="ic-book"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Wxh-gj-Kqq" firstAttribute="leading" secondItem="cHH-hN-xIA" secondAttribute="leading" constant="16" id="0ZV-UC-XVG"/>
+                        <constraint firstItem="RNI-hN-Z7l" firstAttribute="centerY" secondItem="mQc-FX-617" secondAttribute="centerY" id="2hg-oU-BZp"/>
+                        <constraint firstAttribute="bottom" secondItem="mQc-FX-617" secondAttribute="bottom" constant="16" id="BCF-km-a3x"/>
+                        <constraint firstItem="Wxh-gj-Kqq" firstAttribute="centerY" secondItem="mQc-FX-617" secondAttribute="centerY" id="JO2-zs-kpr"/>
+                        <constraint firstAttribute="trailing" secondItem="RNI-hN-Z7l" secondAttribute="trailing" constant="16" id="NXM-Lm-ac1"/>
+                        <constraint firstItem="RNI-hN-Z7l" firstAttribute="leading" secondItem="mQc-FX-617" secondAttribute="trailing" constant="16" id="O2X-hI-E98"/>
+                        <constraint firstItem="mQc-FX-617" firstAttribute="leading" secondItem="Wxh-gj-Kqq" secondAttribute="trailing" constant="16" id="RJy-sF-KcA"/>
+                        <constraint firstItem="mQc-FX-617" firstAttribute="top" secondItem="cHH-hN-xIA" secondAttribute="top" constant="16" id="cNi-W0-OYT"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-qR-lLB">
+                    <rect key="frame" x="0.0" y="133" width="393" height="685"/>
+                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Oh-qR-lLB" secondAttribute="trailing" id="FXG-lf-Q8m"/>
+                <constraint firstItem="cHH-hN-xIA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Sny-ef-NST"/>
+                <constraint firstItem="5Oh-qR-lLB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eAD-my-1nO"/>
+                <constraint firstItem="cHH-hN-xIA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fkw-H1-Sim"/>
+                <constraint firstItem="5Oh-qR-lLB" firstAttribute="top" secondItem="cHH-hN-xIA" secondAttribute="bottom" id="fwo-3f-PVg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Oh-qR-lLB" secondAttribute="bottom" id="gjy-rL-8WW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cHH-hN-xIA" secondAttribute="trailing" id="srL-zF-j7r"/>
+            </constraints>
+            <point key="canvasLocation" x="96.946564885496173" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-book" width="24" height="24"/>
+        <image name="indosat" width="800" height="540"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

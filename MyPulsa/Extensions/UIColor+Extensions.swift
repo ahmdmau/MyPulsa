@@ -10,15 +10,15 @@ import UIKit
 extension UIColor {
     
     static var primaryColor: UIColor {
-        return UIColor(red: 73.0 / 255.0, green: 156.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0)
+        return UIColor(red: 34.0 / 255.0, green: 156.0 / 255.0, blue: 235.0 / 255.0, alpha: 1.0)
     }
     
     static var accentColor: UIColor {
-        return UIColor(red: 235.0 / 255.0, green: 138.0 / 255.0, blue: 82.0 / 255.0, alpha: 1.0)
+        return UIColor(red: 252.0 / 255.0, green: 132.0 / 255.0, blue: 60.0 / 255.0, alpha: 1.0)
     }
     
     static var secondaryTextColor: UIColor {
-        return UIColor(red: 163.0 / 255.0, green: 163.0 / 255.0, blue: 163.0 / 255.0, alpha: 1.0)
+        return UIColor(red: 180.0 / 255.0, green: 180.0 / 255.0, blue: 180.0 / 255.0, alpha: 1.0)
     }
     
 }

@@ -26,6 +26,29 @@
 		A51055F229A9CE3300F0067C /* DataPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51055F029A9CE3300F0067C /* DataPackageViewController.swift */; };
 		A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51055F129A9CE3300F0067C /* DataPackageViewController.xib */; };
 		A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51055F529A9D1C600F0067C /* MainPageModel.swift */; };
+		A510560229AA020A00F0067C /* TweeTextField in Frameworks */ = {isa = PBXBuildFile; productRef = A510560129AA020A00F0067C /* TweeTextField */; };
+		A510560629AA08D800F0067C /* PulsaItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510560429AA08D800F0067C /* PulsaItemTableViewCell.swift */; };
+		A510560729AA08D800F0067C /* PulsaItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A510560529AA08D800F0067C /* PulsaItemTableViewCell.xib */; };
+		A510560E29AA525100F0067C /* PulsaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510560D29AA525100F0067C /* PulsaViewModel.swift */; };
+		A510561629AA53AB00F0067C /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510561429AA53AB00F0067C /* PromoTableViewCell.swift */; };
+		A510561729AA53AB00F0067C /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A510561529AA53AB00F0067C /* PromoTableViewCell.xib */; };
+		A5397CB129AA575F00329D06 /* PromoItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CAF29AA575F00329D06 /* PromoItemCollectionViewCell.swift */; };
+		A5397CB229AA575F00329D06 /* PromoItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CB029AA575F00329D06 /* PromoItemCollectionViewCell.xib */; };
+		A5397CB529AA578600329D06 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CB429AA578600329D06 /* CellProtocol.swift */; };
+		A5397CBB29AB057200329D06 /* SnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CBA29AB057200329D06 /* SnappingLayout.swift */; };
+		A5397CBD29AB088400329D06 /* PulsaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CBC29AB088400329D06 /* PulsaModel.swift */; };
+		A5397CBF29AB08AD00329D06 /* PromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CBE29AB08AD00329D06 /* PromoModel.swift */; };
+		A5397CC229AB08EC00329D06 /* PulsaSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CC129AB08EC00329D06 /* PulsaSectionType.swift */; };
+		A5397CC529AB094400329D06 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CC429AB094400329D06 /* Loadable.swift */; };
+		A5397CC929AB0D0500329D06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CC829AB0D0500329D06 /* Constants.swift */; };
+		A5397CCC29AB0EF900329D06 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CCB29AB0EF900329D06 /* RxCocoa */; };
+		A5397CCE29AB0EF900329D06 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CCD29AB0EF900329D06 /* RxSwift */; };
+		A5397CD129AB0F5F00329D06 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CD029AB0F5F00329D06 /* Differentiator */; };
+		A5397CD329AB0F5F00329D06 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = A5397CD229AB0F5F00329D06 /* RxDataSources */; };
+		A5397CD529AB114F00329D06 /* PulsaDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CD429AB114F00329D06 /* PulsaDataSources.swift */; };
+		A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */; };
+		A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */; };
+		A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397CDA29AB41B900329D06 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +72,24 @@
 		A51055F029A9CE3300F0067C /* DataPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageViewController.swift; sourceTree = "<group>"; };
 		A51055F129A9CE3300F0067C /* DataPackageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPackageViewController.xib; sourceTree = "<group>"; };
 		A51055F529A9D1C600F0067C /* MainPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageModel.swift; sourceTree = "<group>"; };
+		A510560429AA08D800F0067C /* PulsaItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaItemTableViewCell.swift; sourceTree = "<group>"; };
+		A510560529AA08D800F0067C /* PulsaItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PulsaItemTableViewCell.xib; sourceTree = "<group>"; };
+		A510560D29AA525100F0067C /* PulsaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaViewModel.swift; sourceTree = "<group>"; };
+		A510561429AA53AB00F0067C /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
+		A510561529AA53AB00F0067C /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
+		A5397CAF29AA575F00329D06 /* PromoItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5397CB029AA575F00329D06 /* PromoItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5397CB429AA578600329D06 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		A5397CBA29AB057200329D06 /* SnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingLayout.swift; sourceTree = "<group>"; };
+		A5397CBC29AB088400329D06 /* PulsaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaModel.swift; sourceTree = "<group>"; };
+		A5397CBE29AB08AD00329D06 /* PromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoModel.swift; sourceTree = "<group>"; };
+		A5397CC129AB08EC00329D06 /* PulsaSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaSectionType.swift; sourceTree = "<group>"; };
+		A5397CC429AB094400329D06 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		A5397CC829AB0D0500329D06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5397CD429AB114F00329D06 /* PulsaDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaDataSources.swift; sourceTree = "<group>"; };
+		A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		A5397CDA29AB41B900329D06 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +97,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5397CCC29AB0EF900329D06 /* RxCocoa in Frameworks */,
+				A5397CD129AB0F5F00329D06 /* Differentiator in Frameworks */,
 				A51055D329A9C65B00F0067C /* Tabman in Frameworks */,
+				A5397CD329AB0F5F00329D06 /* RxDataSources in Frameworks */,
+				A5397CCE29AB0EF900329D06 /* RxSwift in Frameworks */,
+				A510560229AA020A00F0067C /* TweeTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +128,7 @@
 		A51055BC29A9C57500F0067C /* MyPulsa */ = {
 			isa = PBXGroup;
 			children = (
+				A51055F729A9F7C100F0067C /* Common */,
 				A51055F429A9D1BC00F0067C /* Models */,
 				A51055E329A9CA6200F0067C /* Extensions */,
 				A51055D929A9C93C00F0067C /* Resources */,
@@ -98,9 +145,8 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A510560C29AA523200F0067C /* Pulsa */,
 				A51055D529A9C6F400F0067C /* MainViewController.swift */,
-				A51055EC29A9CE2900F0067C /* PulsaViewController.swift */,
-				A51055ED29A9CE2900F0067C /* PulsaViewController.xib */,
 				A51055F029A9CE3300F0067C /* DataPackageViewController.swift */,
 				A51055F129A9CE3300F0067C /* DataPackageViewController.xib */,
 			);
@@ -133,6 +179,7 @@
 				A51055E629A9CA8E00F0067C /* UIFont+Extensions.swift */,
 				A51055E829A9CB1100F0067C /* UIColor+Extensions.swift */,
 				A51055EA29A9CCCC00F0067C /* UIImage+Extensions.swift */,
+				A5397CDA29AB41B900329D06 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,8 +188,97 @@
 			isa = PBXGroup;
 			children = (
 				A51055F529A9D1C600F0067C /* MainPageModel.swift */,
+				A5397CBC29AB088400329D06 /* PulsaModel.swift */,
+				A5397CBE29AB08AD00329D06 /* PromoModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A51055F729A9F7C100F0067C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CC729AB0CFB00329D06 /* Constants */,
+				A5397CC629AB095C00329D06 /* Layout */,
+				A5397CC329AB093B00329D06 /* Enum */,
+				A5397CB329AA577C00329D06 /* Helper */,
+				A51055F829A9F7C900F0067C /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A51055F829A9F7C900F0067C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CD629AB3FA400329D06 /* EmptyTableViewCell.swift */,
+				A5397CD729AB3FA400329D06 /* EmptyTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A510560329AA08C000F0067C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A510560429AA08D800F0067C /* PulsaItemTableViewCell.swift */,
+				A510560529AA08D800F0067C /* PulsaItemTableViewCell.xib */,
+				A510561429AA53AB00F0067C /* PromoTableViewCell.swift */,
+				A510561529AA53AB00F0067C /* PromoTableViewCell.xib */,
+				A5397CAF29AA575F00329D06 /* PromoItemCollectionViewCell.swift */,
+				A5397CB029AA575F00329D06 /* PromoItemCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A510560C29AA523200F0067C /* Pulsa */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CC029AB08DF00329D06 /* Data */,
+				A510560329AA08C000F0067C /* Cell */,
+				A51055EC29A9CE2900F0067C /* PulsaViewController.swift */,
+				A51055ED29A9CE2900F0067C /* PulsaViewController.xib */,
+				A510560D29AA525100F0067C /* PulsaViewModel.swift */,
+			);
+			path = Pulsa;
+			sourceTree = "<group>";
+		};
+		A5397CB329AA577C00329D06 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CB429AA578600329D06 /* CellProtocol.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A5397CC029AB08DF00329D06 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CC129AB08EC00329D06 /* PulsaSectionType.swift */,
+				A5397CD429AB114F00329D06 /* PulsaDataSources.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A5397CC329AB093B00329D06 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CC429AB094400329D06 /* Loadable.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		A5397CC629AB095C00329D06 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CBA29AB057200329D06 /* SnappingLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A5397CC729AB0CFB00329D06 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CC829AB0D0500329D06 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +299,11 @@
 			name = MyPulsa;
 			packageProductDependencies = (
 				A51055D229A9C65B00F0067C /* Tabman */,
+				A510560129AA020A00F0067C /* TweeTextField */,
+				A5397CCB29AB0EF900329D06 /* RxCocoa */,
+				A5397CCD29AB0EF900329D06 /* RxSwift */,
+				A5397CD029AB0F5F00329D06 /* Differentiator */,
+				A5397CD229AB0F5F00329D06 /* RxDataSources */,
 			);
 			productName = MyPulsa;
 			productReference = A51055BA29A9C57500F0067C /* MyPulsa.app */;
@@ -194,6 +335,9 @@
 			mainGroup = A51055B129A9C57500F0067C;
 			packageReferences = (
 				A51055D129A9C65B00F0067C /* XCRemoteSwiftPackageReference "Tabman" */,
+				A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */,
+				A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = A51055BB29A9C57500F0067C /* Products */;
 			projectDirPath = "";
@@ -213,10 +357,14 @@
 				A51055E129A9C95A00F0067C /* Inter-Bold.otf in Resources */,
 				A51055E029A9C95A00F0067C /* Inter-Medium.otf in Resources */,
 				A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */,
+				A5397CB229AA575F00329D06 /* PromoItemCollectionViewCell.xib in Resources */,
 				A51055DF29A9C95A00F0067C /* Inter-Regular.otf in Resources */,
 				A51055C729A9C57800F0067C /* Assets.xcassets in Resources */,
 				A51055DE29A9C95A00F0067C /* Inter-SemiBold.otf in Resources */,
+				A510561729AA53AB00F0067C /* PromoTableViewCell.xib in Resources */,
+				A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */,
 				A51055EF29A9CE2900F0067C /* PulsaViewController.xib in Resources */,
+				A510560729AA08D800F0067C /* PulsaItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,16 +375,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */,
+				A5397CB529AA578600329D06 /* CellProtocol.swift in Sources */,
 				A51055EE29A9CE2900F0067C /* PulsaViewController.swift in Sources */,
 				A51055D729A9C6F400F0067C /* MainViewController.swift in Sources */,
 				A51055E929A9CB1100F0067C /* UIColor+Extensions.swift in Sources */,
 				A51055BE29A9C57500F0067C /* AppDelegate.swift in Sources */,
+				A5397CC229AB08EC00329D06 /* PulsaSectionType.swift in Sources */,
+				A510560E29AA525100F0067C /* PulsaViewModel.swift in Sources */,
+				A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */,
+				A5397CBF29AB08AD00329D06 /* PromoModel.swift in Sources */,
+				A5397CC529AB094400329D06 /* Loadable.swift in Sources */,
+				A5397CB129AA575F00329D06 /* PromoItemCollectionViewCell.swift in Sources */,
 				A51055F229A9CE3300F0067C /* DataPackageViewController.swift in Sources */,
+				A5397CC929AB0D0500329D06 /* Constants.swift in Sources */,
+				A5397CD529AB114F00329D06 /* PulsaDataSources.swift in Sources */,
+				A510560629AA08D800F0067C /* PulsaItemTableViewCell.swift in Sources */,
+				A5397CBB29AB057200329D06 /* SnappingLayout.swift in Sources */,
 				A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */,
+				A510561629AA53AB00F0067C /* PromoTableViewCell.swift in Sources */,
 				A51055EB29A9CCCC00F0067C /* UIImage+Extensions.swift in Sources */,
 				A51055C029A9C57500F0067C /* SceneDelegate.swift in Sources */,
 				A51055E729A9CA8E00F0067C /* UIFont+Extensions.swift in Sources */,
 				A51055E529A9CA7300F0067C /* UINavigationController+Extensions.swift in Sources */,
+				A5397CBD29AB088400329D06 /* PulsaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +624,30 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oleghnidets/TweeTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -469,6 +655,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A51055D129A9C65B00F0067C /* XCRemoteSwiftPackageReference "Tabman" */;
 			productName = Tabman;
+		};
+		A510560129AA020A00F0067C /* TweeTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */;
+			productName = TweeTextField;
+		};
+		A5397CCB29AB0EF900329D06 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A5397CCD29AB0EF900329D06 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A5397CD029AB0F5F00329D06 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		A5397CD229AB0F5F00329D06 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
