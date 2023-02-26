@@ -68,6 +68,12 @@
 		A5397D0329ABBD9300329D06 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A5397D0229ABBD9300329D06 /* Toast */; };
 		A5397D0529ABBDD800329D06 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0429ABBDD800329D06 /* UIViewController+Extensions.swift */; };
 		A5397D0729ABBEBF00329D06 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0629ABBEBF00329D06 /* OrderModel.swift */; };
+		A5397D0B29ABC0F500329D06 /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0929ABC0F500329D06 /* OrderStatusViewController.swift */; };
+		A5397D0C29ABC0F500329D06 /* OrderStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D0A29ABC0F500329D06 /* OrderStatusViewController.xib */; };
+		A5397D1129ABC3F100329D06 /* OrderDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D0F29ABC3F100329D06 /* OrderDetailsTableViewCell.swift */; };
+		A5397D1229ABC3F100329D06 /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */; };
+		A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */; };
+		A5397D1629ABC65500329D06 /* InfoOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +133,12 @@
 		A5397CFF29ABBBAB00329D06 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		A5397D0429ABBDD800329D06 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A5397D0629ABBEBF00329D06 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		A5397D0929ABC0F500329D06 /* OrderStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
+		A5397D0A29ABC0F500329D06 /* OrderStatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusViewController.xib; sourceTree = "<group>"; };
+		A5397D0F29ABC3F100329D06 /* OrderDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOrderTableViewCell.swift; sourceTree = "<group>"; };
+		A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoOrderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +195,8 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A5397D0D29ABC30700329D06 /* Cell */,
+				A5397D0829ABC0DC00329D06 /* OrderStatus */,
 				A5397CDF29AB5A2300329D06 /* Confirmation */,
 				A510560C29AA523200F0067C /* Pulsa */,
 				A51055D529A9C6F400F0067C /* MainViewController.swift */,
@@ -345,10 +359,38 @@
 			children = (
 				A5397CEF29AB8AAC00329D06 /* WarningTableViewCell.swift */,
 				A5397CF029AB8AAC00329D06 /* WarningTableViewCell.xib */,
-				A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */,
-				A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */,
 				A5397CF929ABAD2F00329D06 /* PinTableViewCell.swift */,
 				A5397CFA29ABAD2F00329D06 /* PinTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A5397D0829ABC0DC00329D06 /* OrderStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A5397D0E29ABC3DC00329D06 /* Cell */,
+				A5397D0929ABC0F500329D06 /* OrderStatusViewController.swift */,
+				A5397D0A29ABC0F500329D06 /* OrderStatusViewController.xib */,
+			);
+			path = OrderStatus;
+			sourceTree = "<group>";
+		};
+		A5397D0D29ABC30700329D06 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5397CF329AB8AE800329D06 /* PaymentDetailsTableViewCell.swift */,
+				A5397CF429AB8AE800329D06 /* PaymentDetailsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A5397D0E29ABC3DC00329D06 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5397D0F29ABC3F100329D06 /* OrderDetailsTableViewCell.swift */,
+				A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */,
+				A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */,
+				A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -433,16 +475,19 @@
 				A51055E029A9C95A00F0067C /* Inter-Medium.otf in Resources */,
 				A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */,
 				A5397CB229AA575F00329D06 /* PromoItemCollectionViewCell.xib in Resources */,
+				A5397D1629ABC65500329D06 /* InfoOrderTableViewCell.xib in Resources */,
 				A51055DF29A9C95A00F0067C /* Inter-Regular.otf in Resources */,
 				A5397CF629AB8AE800329D06 /* PaymentDetailsTableViewCell.xib in Resources */,
 				A51055C729A9C57800F0067C /* Assets.xcassets in Resources */,
 				A51055DE29A9C95A00F0067C /* Inter-SemiBold.otf in Resources */,
 				A510561729AA53AB00F0067C /* PromoTableViewCell.xib in Resources */,
 				A5397CD929AB3FA400329D06 /* EmptyTableViewCell.xib in Resources */,
+				A5397D0C29ABC0F500329D06 /* OrderStatusViewController.xib in Resources */,
 				A51055EF29A9CE2900F0067C /* PulsaViewController.xib in Resources */,
 				A5397CE329AB5A3C00329D06 /* ConfirmationViewController.xib in Resources */,
 				A510560729AA08D800F0067C /* PulsaItemTableViewCell.xib in Resources */,
 				A5397CFC29ABAD2F00329D06 /* PinTableViewCell.xib in Resources */,
+				A5397D1229ABC3F100329D06 /* OrderDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +510,11 @@
 				A5397CE729AB78A500329D06 /* BaseViewController.swift in Sources */,
 				A51055BE29A9C57500F0067C /* AppDelegate.swift in Sources */,
 				A5397CF529AB8AE800329D06 /* PaymentDetailsTableViewCell.swift in Sources */,
+				A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */,
+				A5397D0B29ABC0F500329D06 /* OrderStatusViewController.swift in Sources */,
 				A5397CC229AB08EC00329D06 /* PulsaSectionType.swift in Sources */,
 				A5397D0029ABBBAB00329D06 /* UILabel+Extensions.swift in Sources */,
+				A5397D1129ABC3F100329D06 /* OrderDetailsTableViewCell.swift in Sources */,
 				A5397CE929AB78DD00329D06 /* NavigationBarButtonClickable.swift in Sources */,
 				A510560E29AA525100F0067C /* PulsaViewModel.swift in Sources */,
 				A5397CD829AB3FA400329D06 /* EmptyTableViewCell.swift in Sources */,

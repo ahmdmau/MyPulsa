@@ -9,17 +9,18 @@ import UIKit
 
 protocol NavigationBarButtonClickable {
     func leftButtonClicked(button: AnyObject)
-    func rightButtonClicked(button: AnyObject)
+    func closeButtonClicked(button: AnyObject)
 }
 
 extension NavigationBarButtonClickable {
     func leftButtonClicked(button: AnyObject) {}
-    func rightButtonClicked(button: AnyObject) {}
+    func closeButtonClicked(button: AnyObject) {}
 }
 
 enum NavigationBarStyle {
     case backOnly
     case titleOnly
+    case toRoot
 }
 
 enum NavigationBarColorType {
@@ -49,8 +50,26 @@ extension NavigationBarButtonClickable where Self: BaseViewController {
             navigationItem.rightBarButtonItem = nil
         case .titleOnly:
             break
+        case .toRoot:
+            navigationItem.leftBarButtonItem = getWhiteCloseButton()
+            navigationItem.rightBarButtonItem = nil
         }
     }
+    private func getWhiteCloseButton() -> UIBarButtonItem {
+        let closeButton = CustomBarButton(frame: .zero,
+                                         rectInsets: UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8),
+                                         size: CGSize(width: 44, height: 44))
+        
+        closeButton.imageEdgeInsets.left = -15
+        closeButton.setImage(UIImage(named: "ic-close"), for: .normal)
+        closeButton.rx.controlEvent(.touchUpInside).bind { [weak self] in
+            self?.closeButtonClicked(button: closeButton)
+        }.disposed(by: disposeBag)
+        
+        let barButtonItem = UIBarButtonItem(customView: closeButton)
+        return barButtonItem
+    }
+    
     
     private func getWhiteBackButton() -> UIBarButtonItem {
         let backButton = CustomBarButton(frame: .zero,

@@ -59,7 +59,7 @@ class ConfirmationViewController: BaseViewController {
         if pin.isEmpty {
             self.showErrorToast(message: "Pin is required, please input your pin")
         } else {
-            print("False")
+            self.navigationController?.pushViewController(OrderStatusViewController(orderModel: orderModel), animated: true)
         }
     }
 }

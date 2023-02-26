@@ -8,7 +8,7 @@
 import Foundation
 
 struct OrderModel {
-    let id: Int
+    let id: String
     let orderName: String
     let nominal: Double
     let phoneNumber: String

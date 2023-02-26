@@ -12,14 +12,13 @@ import RxCocoa
 import RxDataSources
 import Differentiator
 
-class PulsaViewController: UIViewController {
+class PulsaViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var phoneTextField: UITextField!
     
     private let viewModel: PulsaViewModel
-    let disposeBag = DisposeBag()
     
     init(viewModel: PulsaViewModel) {
         self.viewModel = viewModel
@@ -35,6 +34,13 @@ class PulsaViewController: UIViewController {
         setupTableView()
         bindTableView()
         setupTextField()
+        self.addKeyboardObserver(scrollView: tableView)
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.removeKeyboardObserver()
     }
     
 }
@@ -126,7 +132,7 @@ extension PulsaViewController: UITableViewDelegate {
 // MARK: - Pulsa Item Delegate
 extension PulsaViewController: PulsaItemDelegate {
     func didSelect(data: PulsaModel) {
-        let orderModel = OrderModel(id: 1, orderName: "Pulsa", nominal: data.nominal, phoneNumber: phoneTextField.text ?? "")
+        let orderModel = OrderModel(id: "TRX001", orderName: "Pulsa", nominal: data.nominal, phoneNumber: phoneTextField.text ?? "")
         self.navigationController?.pushViewController(ConfirmationViewController(orderModel: orderModel), animated: true)
     }
 }

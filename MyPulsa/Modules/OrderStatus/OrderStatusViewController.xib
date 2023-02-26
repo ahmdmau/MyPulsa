@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.otf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderStatusViewController" customModule="MyPulsa" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Nu3-Q1-JSt" id="LR9-9t-WtW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-Pt-8Ip">
+                    <rect key="frame" x="0.0" y="770" width="393" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vE-dB-I6n">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="OK"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.51764705882352935" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="6vE-dB-I6n" firstAttribute="top" secondItem="BhO-Pt-8Ip" secondAttribute="top" id="PIw-qO-UXY"/>
+                        <constraint firstAttribute="height" constant="48" id="R2N-kY-VZm"/>
+                        <constraint firstAttribute="bottom" secondItem="6vE-dB-I6n" secondAttribute="bottom" id="YrF-bN-jpz"/>
+                        <constraint firstAttribute="trailing" secondItem="6vE-dB-I6n" secondAttribute="trailing" id="cNa-cI-8WK"/>
+                        <constraint firstItem="6vE-dB-I6n" firstAttribute="leading" secondItem="BhO-Pt-8Ip" secondAttribute="leading" id="jnp-R3-gvK"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-Q1-JSt">
+                    <rect key="frame" x="0.0" y="59" width="393" height="711"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nu3-Q1-JSt" secondAttribute="trailing" id="8HV-8K-oZG"/>
+                <constraint firstItem="BhO-Pt-8Ip" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="R5j-vh-eAe"/>
+                <constraint firstItem="BhO-Pt-8Ip" firstAttribute="top" secondItem="Nu3-Q1-JSt" secondAttribute="bottom" id="SHT-Yo-7Aa"/>
+                <constraint firstItem="Nu3-Q1-JSt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wpj-4x-akW"/>
+                <constraint firstItem="BhO-Pt-8Ip" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Z1f-0k-0Zd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BhO-Pt-8Ip" secondAttribute="trailing" id="ur1-eo-WeJ"/>
+                <constraint firstItem="Nu3-Q1-JSt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vDH-TI-jM0"/>
+            </constraints>
+            <point key="canvasLocation" x="71" y="20"/>
+        </view>
+    </objects>
+</document>

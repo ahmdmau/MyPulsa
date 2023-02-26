@@ -68,4 +68,12 @@ extension BaseViewController: NavigationBarButtonClickable {
             navigationController.popViewController(animated: true)
         }
     }
+    
+    @objc func closeButtonClicked(button: AnyObject) {
+        guard let navigationController = navigationController else {
+            return
+        }
+        
+        navigationController.popToRootViewController(animated: true)
+    }
 }
