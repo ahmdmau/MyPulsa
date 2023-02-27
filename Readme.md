@@ -10,6 +10,12 @@ This project is part of the test process as an iOS Developer at FinAccel created
 - Confirmation Screen
 - Payment Details Screen
 
+## Screenshots
+
+<img src="Screenshots/1.png" width=200 height=433> <img src="Screenshots/2.png" width=200 height=433>
+<img src="Screenshots/3.png" width=200 height=433> <img src="Screenshots/4.png" width=200 height=433>
+<img src="Screenshots/5.png" width=200 height=433>
+
 ## Requirements
 
 - Xcode 12 or higher
