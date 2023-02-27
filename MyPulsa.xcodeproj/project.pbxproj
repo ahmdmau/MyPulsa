@@ -73,9 +73,6 @@
 		A5397D1229ABC3F100329D06 /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */; };
 		A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */; };
 		A5397D1629ABC65500329D06 /* InfoOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */; };
-		A580391D29ABDF0300FF3058 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A580391B29ABDF0300FF3058 /* style.css */; };
-		A580391E29ABDF0300FF3058 /* webview.html in Resources */ = {isa = PBXBuildFile; fileRef = A580391C29ABDF0300FF3058 /* webview.html */; };
-		A580392029ABDF4700FF3058 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A580391F29ABDF4600FF3058 /* main.js */; };
 		A580392229ABDF5C00FF3058 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580392129ABDF5C00FF3058 /* CustomWebView.swift */; };
 		A580392529ABDF8100FF3058 /* PromoTncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580392329ABDF8100FF3058 /* PromoTncTableViewCell.swift */; };
 		A580392629ABDF8100FF3058 /* PromoTncTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A580392429ABDF8100FF3058 /* PromoTncTableViewCell.xib */; };
@@ -154,9 +151,6 @@
 		A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOrderTableViewCell.swift; sourceTree = "<group>"; };
 		A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoOrderTableViewCell.xib; sourceTree = "<group>"; };
-		A580391B29ABDF0300FF3058 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		A580391C29ABDF0300FF3058 /* webview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webview.html; sourceTree = "<group>"; };
-		A580391F29ABDF4600FF3058 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		A580392129ABDF5C00FF3058 /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
 		A580392329ABDF8100FF3058 /* PromoTncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTncTableViewCell.swift; sourceTree = "<group>"; };
 		A580392429ABDF8100FF3058 /* PromoTncTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTncTableViewCell.xib; sourceTree = "<group>"; };
@@ -241,7 +235,6 @@
 		A51055D929A9C93C00F0067C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A580391A29ABDEFB00FF3058 /* WebView */,
 				A51055E229A9C95E00F0067C /* Fonts */,
 			);
 			path = Resources;
@@ -441,16 +434,6 @@
 			path = DataPackage;
 			sourceTree = "<group>";
 		};
-		A580391A29ABDEFB00FF3058 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				A580391F29ABDF4600FF3058 /* main.js */,
-				A580391B29ABDF0300FF3058 /* style.css */,
-				A580391C29ABDF0300FF3058 /* webview.html */,
-			);
-			path = WebView;
-			sourceTree = "<group>";
-		};
 		A5FA29B829ABCD9E00476DA3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,13 +549,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5397CF229AB8AAC00329D06 /* WarningTableViewCell.xib in Resources */,
-				A580391D29ABDF0300FF3058 /* style.css in Resources */,
 				A51055CA29A9C57800F0067C /* LaunchScreen.storyboard in Resources */,
 				A5FA29BF29ABD07600476DA3 /* DataPackageItemTableViewCell.xib in Resources */,
 				A5FA29C429ABD45300476DA3 /* MerchantPromoViewController.xib in Resources */,
 				A5FA29CD29ABD74300476DA3 /* PromoInfoTableViewCell.xib in Resources */,
-				A580391E29ABDF0300FF3058 /* webview.html in Resources */,
-				A580392029ABDF4700FF3058 /* main.js in Resources */,
 				A580392629ABDF8100FF3058 /* PromoTncTableViewCell.xib in Resources */,
 				A51055E129A9C95A00F0067C /* Inter-Bold.otf in Resources */,
 				A5FA29C929ABD5BF00476DA3 /* PromoBannerTableViewCell.xib in Resources */,
