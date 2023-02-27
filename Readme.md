@@ -27,7 +27,7 @@ This project is part of the test process as an iOS Developer at FinAccel created
 1. Clone the repository
 2. Run the Project
 
-#Usage
+## Usage
 1. On Pulsa & Data package screen, you can enter your number, but when the page is opened for the first time, it will appear the default number. You can choose phone number from your contact.
 2. On Pulsa screen, you can see the promo section, and you can select the promo that you want to know the details.
 3. On Promo screen, you can copy the promo code by tapping copy button
