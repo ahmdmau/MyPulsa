@@ -26,7 +26,6 @@
 		A51055F229A9CE3300F0067C /* DataPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51055F029A9CE3300F0067C /* DataPackageViewController.swift */; };
 		A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51055F129A9CE3300F0067C /* DataPackageViewController.xib */; };
 		A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51055F529A9D1C600F0067C /* MainPageModel.swift */; };
-		A510560229AA020A00F0067C /* TweeTextField in Frameworks */ = {isa = PBXBuildFile; productRef = A510560129AA020A00F0067C /* TweeTextField */; };
 		A510560629AA08D800F0067C /* PulsaItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510560429AA08D800F0067C /* PulsaItemTableViewCell.swift */; };
 		A510560729AA08D800F0067C /* PulsaItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A510560529AA08D800F0067C /* PulsaItemTableViewCell.xib */; };
 		A510560E29AA525100F0067C /* PulsaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510560D29AA525100F0067C /* PulsaViewModel.swift */; };
@@ -178,7 +177,6 @@
 				A5397CD329AB0F5F00329D06 /* RxDataSources in Frameworks */,
 				A5397CCE29AB0EF900329D06 /* RxSwift in Frameworks */,
 				A5397D0329ABBD9300329D06 /* Toast in Frameworks */,
-				A510560229AA020A00F0067C /* TweeTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +490,6 @@
 			name = MyPulsa;
 			packageProductDependencies = (
 				A51055D229A9C65B00F0067C /* Tabman */,
-				A510560129AA020A00F0067C /* TweeTextField */,
 				A5397CCB29AB0EF900329D06 /* RxCocoa */,
 				A5397CCD29AB0EF900329D06 /* RxSwift */,
 				A5397CD029AB0F5F00329D06 /* Differentiator */,
@@ -529,7 +526,6 @@
 			mainGroup = A51055B129A9C57500F0067C;
 			packageReferences = (
 				A51055D129A9C65B00F0067C /* XCRemoteSwiftPackageReference "Tabman" */,
-				A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */,
 				A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				A5397CCF29AB0F5F00329D06 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				A5397D0129ABBD9300329D06 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
@@ -856,14 +852,6 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/oleghnidets/TweeTextField";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		A5397CCA29AB0EF900329D06 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -895,11 +883,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A51055D129A9C65B00F0067C /* XCRemoteSwiftPackageReference "Tabman" */;
 			productName = Tabman;
-		};
-		A510560129AA020A00F0067C /* TweeTextField */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A510560029AA020A00F0067C /* XCRemoteSwiftPackageReference "TweeTextField" */;
-			productName = TweeTextField;
 		};
 		A5397CCB29AB0EF900329D06 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
