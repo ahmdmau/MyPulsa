@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 import Differentiator
+import ContactsUI
 
 class DataPackageViewController: BaseViewController {
     
@@ -42,6 +43,9 @@ class DataPackageViewController: BaseViewController {
         self.removeKeyboardObserver()
     }
     
+    @IBAction func contactPressed(_ sender: UIButton) {
+        presentContactPicker()
+    }
 }
 
 // MARK: - Methods
@@ -76,6 +80,12 @@ extension DataPackageViewController {
         }
     }
     
+    func presentContactPicker() {
+        let contactPickerVC = CNContactPickerViewController()
+        contactPickerVC.delegate = self
+        present(contactPickerVC, animated: true)
+    }
+    
 }
 
 extension DataPackageViewController {
@@ -93,6 +103,7 @@ extension DataPackageViewController {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoTableViewCell.identifier, for: indexPath) as? PromoTableViewCell else {
                     return UITableViewCell()
                 }
+                cell.delegate = self
                 cell.promos = promoData
                 return cell
             case .empty:
@@ -134,5 +145,23 @@ extension DataPackageViewController: DataPackageItemDelegate {
     func didSelect(data: DataPackageModel) {
         let orderModel = OrderModel(id: "TRX001", orderName: data.dataPackageName, nominal: data.nominal, phoneNumber: phoneTextField.text ?? "")
         self.navigationController?.pushViewController(ConfirmationViewController(orderModel: orderModel), animated: true)
+    }
+}
+
+
+// MARK: - Promo Delegate
+extension DataPackageViewController: PromoDelegate {
+    func didPromoTapped(promoModel: PromoModel) {
+        let viewController = MerchantPromoViewController(promoModel: promoModel)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+// MARK: - Contact UI
+extension DataPackageViewController: CNContactPickerDelegate {
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        if let phoneNumber = contact.phoneNumbers.first?.value.stringValue {
+            phoneTextField.text = phoneNumber.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
     }
 }

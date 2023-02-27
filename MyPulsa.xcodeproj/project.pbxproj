@@ -73,11 +73,23 @@
 		A5397D1229ABC3F100329D06 /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */; };
 		A5397D1529ABC65500329D06 /* InfoOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */; };
 		A5397D1629ABC65500329D06 /* InfoOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */; };
+		A580391D29ABDF0300FF3058 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A580391B29ABDF0300FF3058 /* style.css */; };
+		A580391E29ABDF0300FF3058 /* webview.html in Resources */ = {isa = PBXBuildFile; fileRef = A580391C29ABDF0300FF3058 /* webview.html */; };
+		A580392029ABDF4700FF3058 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A580391F29ABDF4600FF3058 /* main.js */; };
+		A580392229ABDF5C00FF3058 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580392129ABDF5C00FF3058 /* CustomWebView.swift */; };
+		A580392529ABDF8100FF3058 /* PromoTncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580392329ABDF8100FF3058 /* PromoTncTableViewCell.swift */; };
+		A580392629ABDF8100FF3058 /* PromoTncTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A580392429ABDF8100FF3058 /* PromoTncTableViewCell.xib */; };
 		A5FA29B529ABCCE300476DA3 /* DataPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B429ABCCE300476DA3 /* DataPackageViewModel.swift */; };
 		A5FA29B729ABCD5E00476DA3 /* DataPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B629ABCD5E00476DA3 /* DataPackageModel.swift */; };
 		A5FA29BA29ABCDA900476DA3 /* DataPackageSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29B929ABCDA900476DA3 /* DataPackageSectionType.swift */; };
 		A5FA29BE29ABD07600476DA3 /* DataPackageItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */; };
 		A5FA29BF29ABD07600476DA3 /* DataPackageItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */; };
+		A5FA29C329ABD45300476DA3 /* MerchantPromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29C129ABD45300476DA3 /* MerchantPromoViewController.swift */; };
+		A5FA29C429ABD45300476DA3 /* MerchantPromoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FA29C229ABD45300476DA3 /* MerchantPromoViewController.xib */; };
+		A5FA29C829ABD5BF00476DA3 /* PromoBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29C629ABD5BF00476DA3 /* PromoBannerTableViewCell.swift */; };
+		A5FA29C929ABD5BF00476DA3 /* PromoBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FA29C729ABD5BF00476DA3 /* PromoBannerTableViewCell.xib */; };
+		A5FA29CC29ABD74300476DA3 /* PromoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA29CA29ABD74300476DA3 /* PromoInfoTableViewCell.swift */; };
+		A5FA29CD29ABD74300476DA3 /* PromoInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5FA29CB29ABD74300476DA3 /* PromoInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,11 +154,23 @@
 		A5397D1029ABC3F100329D06 /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		A5397D1329ABC65500329D06 /* InfoOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOrderTableViewCell.swift; sourceTree = "<group>"; };
 		A5397D1429ABC65500329D06 /* InfoOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoOrderTableViewCell.xib; sourceTree = "<group>"; };
+		A580391B29ABDF0300FF3058 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		A580391C29ABDF0300FF3058 /* webview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webview.html; sourceTree = "<group>"; };
+		A580391F29ABDF4600FF3058 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		A580392129ABDF5C00FF3058 /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		A580392329ABDF8100FF3058 /* PromoTncTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTncTableViewCell.swift; sourceTree = "<group>"; };
+		A580392429ABDF8100FF3058 /* PromoTncTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTncTableViewCell.xib; sourceTree = "<group>"; };
 		A5FA29B429ABCCE300476DA3 /* DataPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageViewModel.swift; sourceTree = "<group>"; };
 		A5FA29B629ABCD5E00476DA3 /* DataPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageModel.swift; sourceTree = "<group>"; };
 		A5FA29B929ABCDA900476DA3 /* DataPackageSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageSectionType.swift; sourceTree = "<group>"; };
 		A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageItemTableViewCell.swift; sourceTree = "<group>"; };
 		A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPackageItemTableViewCell.xib; sourceTree = "<group>"; };
+		A5FA29C129ABD45300476DA3 /* MerchantPromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantPromoViewController.swift; sourceTree = "<group>"; };
+		A5FA29C229ABD45300476DA3 /* MerchantPromoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantPromoViewController.xib; sourceTree = "<group>"; };
+		A5FA29C629ABD5BF00476DA3 /* PromoBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoBannerTableViewCell.swift; sourceTree = "<group>"; };
+		A5FA29C729ABD5BF00476DA3 /* PromoBannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoBannerTableViewCell.xib; sourceTree = "<group>"; };
+		A5FA29CA29ABD74300476DA3 /* PromoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A5FA29CB29ABD74300476DA3 /* PromoInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoInfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,12 +227,13 @@
 		A51055D429A9C6DD00F0067C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A5397D0D29ABC30700329D06 /* Cell */,
-				A5397D1829ABCBB000329D06 /* DataPackage */,
-				A5397D0829ABC0DC00329D06 /* OrderStatus */,
-				A5397CDF29AB5A2300329D06 /* Confirmation */,
-				A510560C29AA523200F0067C /* Pulsa */,
 				A51055D529A9C6F400F0067C /* MainViewController.swift */,
+				A5397D0D29ABC30700329D06 /* Cell */,
+				A5397CDF29AB5A2300329D06 /* Confirmation */,
+				A5397D1829ABCBB000329D06 /* DataPackage */,
+				A5FA29C029ABD43700476DA3 /* MerchantPromo */,
+				A5397D0829ABC0DC00329D06 /* OrderStatus */,
+				A510560C29AA523200F0067C /* Pulsa */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -216,6 +241,7 @@
 		A51055D929A9C93C00F0067C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A580391A29ABDEFB00FF3058 /* WebView */,
 				A51055E229A9C95E00F0067C /* Fonts */,
 			);
 			path = Resources;
@@ -282,6 +308,7 @@
 				A5397CE829AB78DC00329D06 /* NavigationBarButtonClickable.swift */,
 				A5397CEC29AB82A400329D06 /* RoundedShadowView.swift */,
 				A5397CF729ABABA400329D06 /* DashedHorizontalView.swift */,
+				A580392129ABDF5C00FF3058 /* CustomWebView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -414,6 +441,16 @@
 			path = DataPackage;
 			sourceTree = "<group>";
 		};
+		A580391A29ABDEFB00FF3058 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				A580391F29ABDF4600FF3058 /* main.js */,
+				A580391B29ABDF0300FF3058 /* style.css */,
+				A580391C29ABDF0300FF3058 /* webview.html */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		A5FA29B829ABCD9E00476DA3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +464,29 @@
 			children = (
 				A5FA29BC29ABD07600476DA3 /* DataPackageItemTableViewCell.swift */,
 				A5FA29BD29ABD07600476DA3 /* DataPackageItemTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A5FA29C029ABD43700476DA3 /* MerchantPromo */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA29C529ABD5A900476DA3 /* Cell */,
+				A5FA29C129ABD45300476DA3 /* MerchantPromoViewController.swift */,
+				A5FA29C229ABD45300476DA3 /* MerchantPromoViewController.xib */,
+			);
+			path = MerchantPromo;
+			sourceTree = "<group>";
+		};
+		A5FA29C529ABD5A900476DA3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A5FA29C629ABD5BF00476DA3 /* PromoBannerTableViewCell.swift */,
+				A5FA29C729ABD5BF00476DA3 /* PromoBannerTableViewCell.xib */,
+				A5FA29CA29ABD74300476DA3 /* PromoInfoTableViewCell.swift */,
+				A5FA29CB29ABD74300476DA3 /* PromoInfoTableViewCell.xib */,
+				A580392329ABDF8100FF3058 /* PromoTncTableViewCell.swift */,
+				A580392429ABDF8100FF3058 /* PromoTncTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -506,9 +566,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5397CF229AB8AAC00329D06 /* WarningTableViewCell.xib in Resources */,
+				A580391D29ABDF0300FF3058 /* style.css in Resources */,
 				A51055CA29A9C57800F0067C /* LaunchScreen.storyboard in Resources */,
 				A5FA29BF29ABD07600476DA3 /* DataPackageItemTableViewCell.xib in Resources */,
+				A5FA29C429ABD45300476DA3 /* MerchantPromoViewController.xib in Resources */,
+				A5FA29CD29ABD74300476DA3 /* PromoInfoTableViewCell.xib in Resources */,
+				A580391E29ABDF0300FF3058 /* webview.html in Resources */,
+				A580392029ABDF4700FF3058 /* main.js in Resources */,
+				A580392629ABDF8100FF3058 /* PromoTncTableViewCell.xib in Resources */,
 				A51055E129A9C95A00F0067C /* Inter-Bold.otf in Resources */,
+				A5FA29C929ABD5BF00476DA3 /* PromoBannerTableViewCell.xib in Resources */,
 				A51055E029A9C95A00F0067C /* Inter-Medium.otf in Resources */,
 				A51055F329A9CE3300F0067C /* DataPackageViewController.xib in Resources */,
 				A5397CB229AA575F00329D06 /* PromoItemCollectionViewCell.xib in Resources */,
@@ -537,12 +604,15 @@
 			files = (
 				A5397CDB29AB41B900329D06 /* Double+Extensions.swift in Sources */,
 				A5397CF129AB8AAC00329D06 /* WarningTableViewCell.swift in Sources */,
+				A580392229ABDF5C00FF3058 /* CustomWebView.swift in Sources */,
 				A5397CB529AA578600329D06 /* CellProtocol.swift in Sources */,
 				A5397CFB29ABAD2F00329D06 /* PinTableViewCell.swift in Sources */,
 				A5397CED29AB82A400329D06 /* RoundedShadowView.swift in Sources */,
 				A51055EE29A9CE2900F0067C /* PulsaViewController.swift in Sources */,
+				A580392529ABDF8100FF3058 /* PromoTncTableViewCell.swift in Sources */,
 				A51055D729A9C6F400F0067C /* MainViewController.swift in Sources */,
 				A5FA29B529ABCCE300476DA3 /* DataPackageViewModel.swift in Sources */,
+				A5FA29C329ABD45300476DA3 /* MerchantPromoViewController.swift in Sources */,
 				A5FA29B729ABCD5E00476DA3 /* DataPackageModel.swift in Sources */,
 				A5397D0529ABBDD800329D06 /* UIViewController+Extensions.swift in Sources */,
 				A51055E929A9CB1100F0067C /* UIColor+Extensions.swift in Sources */,
@@ -571,12 +641,14 @@
 				A51055F629A9D1C600F0067C /* MainPageModel.swift in Sources */,
 				A510561629AA53AB00F0067C /* PromoTableViewCell.swift in Sources */,
 				A51055EB29A9CCCC00F0067C /* UIImage+Extensions.swift in Sources */,
+				A5FA29C829ABD5BF00476DA3 /* PromoBannerTableViewCell.swift in Sources */,
 				A5397CFE29ABB51200329D06 /* UITextField+Extensions.swift in Sources */,
 				A5397CEB29AB7C0900329D06 /* UIView+Extensions.swift in Sources */,
 				A51055C029A9C57500F0067C /* SceneDelegate.swift in Sources */,
 				A5397CE529AB787900329D06 /* CustomBarButton.swift in Sources */,
 				A51055E729A9CA8E00F0067C /* UIFont+Extensions.swift in Sources */,
 				A51055E529A9CA7300F0067C /* UINavigationController+Extensions.swift in Sources */,
+				A5FA29CC29ABD74300476DA3 /* PromoInfoTableViewCell.swift in Sources */,
 				A5397D0729ABBEBF00329D06 /* OrderModel.swift in Sources */,
 				A5397CBD29AB088400329D06 /* PulsaModel.swift in Sources */,
 			);

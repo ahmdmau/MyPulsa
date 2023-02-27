@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.otf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="182" id="KGk-i7-Jjw" customClass="PromoInfoTableViewCell" customModule="MyPulsa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-ja-p2r">
+                        <rect key="frame" x="16" y="16" width="288" height="19.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                        <color key="textColor" red="0.052699816350036621" green="0.052699816350036621" blue="0.052699816350036621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZc-IZ-rxT">
+                        <rect key="frame" x="16" y="47.666666666666664" width="288" height="14.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="10-31 Januari 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-Ws-5Sw">
+                        <rect key="frame" x="16" y="66.333333333333329" width="288" height="17"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                        <color key="textColor" red="0.052699816349999998" green="0.052699816349999998" blue="0.052699816349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Voucher Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-Ug-6Wr">
+                        <rect key="frame" x="16" y="95.333333333333329" width="288" height="15"/>
+                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-8B-X3g">
+                        <rect key="frame" x="16" y="114.33333333333331" width="288" height="48"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSh-lf-s8B">
+                                <rect key="frame" x="224" y="0.0" width="64" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Dx8-oR-Tfr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.51764705879999995" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIRTHDAY10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eih-x0-EjF">
+                                <rect key="frame" x="0.0" y="0.0" width="215" height="48"/>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sl9-cq-qkc">
+                                <rect key="frame" x="223" y="0.0" width="1" height="48"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="0.25" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="4VU-OQ-eul"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oSh-lf-s8B" secondAttribute="trailing" id="9Sm-rV-UKE"/>
+                            <constraint firstItem="eih-x0-EjF" firstAttribute="leading" secondItem="hA2-8B-X3g" secondAttribute="leading" id="ArL-zd-EbC"/>
+                            <constraint firstItem="sl9-cq-qkc" firstAttribute="top" secondItem="hA2-8B-X3g" secondAttribute="top" id="GfX-Oo-B2u"/>
+                            <constraint firstItem="eih-x0-EjF" firstAttribute="top" secondItem="hA2-8B-X3g" secondAttribute="top" id="Lbh-L7-yOM"/>
+                            <constraint firstAttribute="bottom" secondItem="oSh-lf-s8B" secondAttribute="bottom" id="NVx-hk-Fle"/>
+                            <constraint firstItem="oSh-lf-s8B" firstAttribute="top" secondItem="hA2-8B-X3g" secondAttribute="top" id="ZaP-6Z-LME"/>
+                            <constraint firstAttribute="bottom" secondItem="eih-x0-EjF" secondAttribute="bottom" id="aPs-fw-33I"/>
+                            <constraint firstItem="sl9-cq-qkc" firstAttribute="leading" secondItem="eih-x0-EjF" secondAttribute="trailing" constant="8" id="at8-T1-FVw"/>
+                            <constraint firstAttribute="height" constant="48" id="m28-ru-bRg"/>
+                            <constraint firstAttribute="bottom" secondItem="sl9-cq-qkc" secondAttribute="bottom" id="roy-OW-dkJ"/>
+                            <constraint firstItem="oSh-lf-s8B" firstAttribute="leading" secondItem="sl9-cq-qkc" secondAttribute="trailing" id="uX8-nF-wxQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hA2-8B-X3g" secondAttribute="trailing" constant="16" id="06w-6P-eqF"/>
+                    <constraint firstItem="IQ6-Ws-5Sw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0Mg-pu-D7h"/>
+                    <constraint firstAttribute="trailing" secondItem="uZc-IZ-rxT" secondAttribute="trailing" constant="16" id="3gI-q4-nF2"/>
+                    <constraint firstItem="NIM-ja-p2r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="4tR-nC-9Zn"/>
+                    <constraint firstItem="IQ6-Ws-5Sw" firstAttribute="top" secondItem="uZc-IZ-rxT" secondAttribute="bottom" constant="4" id="4wg-pQ-yv2"/>
+                    <constraint firstAttribute="trailing" secondItem="IQ6-Ws-5Sw" secondAttribute="trailing" constant="16" id="612-LK-MAp"/>
+                    <constraint firstItem="NIM-ja-p2r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MWt-Ae-yne"/>
+                    <constraint firstItem="hA2-8B-X3g" firstAttribute="top" secondItem="F4V-Ug-6Wr" secondAttribute="bottom" constant="4" id="MaP-b1-JCf"/>
+                    <constraint firstItem="F4V-Ug-6Wr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XDH-YM-u42"/>
+                    <constraint firstItem="uZc-IZ-rxT" firstAttribute="top" secondItem="NIM-ja-p2r" secondAttribute="bottom" constant="12" id="aHg-Kd-c3g"/>
+                    <constraint firstAttribute="bottom" secondItem="hA2-8B-X3g" secondAttribute="bottom" constant="16.670000000000002" id="adC-aT-a7E"/>
+                    <constraint firstAttribute="trailing" secondItem="NIM-ja-p2r" secondAttribute="trailing" constant="16" id="fne-Ll-7Yc"/>
+                    <constraint firstItem="uZc-IZ-rxT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jwf-gG-dG6"/>
+                    <constraint firstItem="hA2-8B-X3g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ls1-WZ-Nes"/>
+                    <constraint firstAttribute="trailing" secondItem="F4V-Ug-6Wr" secondAttribute="trailing" constant="16" id="vkb-Et-iV0"/>
+                    <constraint firstItem="F4V-Ug-6Wr" firstAttribute="top" secondItem="IQ6-Ws-5Sw" secondAttribute="bottom" constant="12" id="xXI-D9-tr6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="copyButton" destination="oSh-lf-s8B" id="fVy-H3-BKr"/>
+                <outlet property="promoCodeContainerView" destination="hA2-8B-X3g" id="tha-42-hPH"/>
+                <outlet property="promoNameLabel" destination="NIM-ja-p2r" id="GgY-vR-YdD"/>
+                <outlet property="validDateLabel" destination="IQ6-Ws-5Sw" id="bCO-gC-4q1"/>
+                <outlet property="voucherCodeLabel" destination="eih-x0-EjF" id="gwN-hV-yrK"/>
+            </connections>
+            <point key="canvasLocation" x="-29.007633587786259" y="67.957746478873247"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 import Differentiator
+import ContactsUI
 
 class PulsaViewController: BaseViewController {
     
@@ -42,6 +43,15 @@ class PulsaViewController: BaseViewController {
         self.removeKeyboardObserver()
     }
     
+    @IBAction func contactTapped(_ sender: UIButton) {
+        presentContactPicker()
+    }
+    
+    func presentContactPicker() {
+        let contactPickerVC = CNContactPickerViewController()
+        contactPickerVC.delegate = self
+        present(contactPickerVC, animated: true)
+    }
 }
 
 // MARK: - Methods
@@ -93,6 +103,7 @@ extension PulsaViewController {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoTableViewCell.identifier, for: indexPath) as? PromoTableViewCell else {
                     return UITableViewCell()
                 }
+                cell.delegate = self
                 cell.promos = promoData
                 return cell
             case .empty:
@@ -134,5 +145,22 @@ extension PulsaViewController: PulsaItemDelegate {
     func didSelect(data: PulsaModel) {
         let orderModel = OrderModel(id: "TRX001", orderName: "Pulsa", nominal: data.nominal, phoneNumber: phoneTextField.text ?? "")
         self.navigationController?.pushViewController(ConfirmationViewController(orderModel: orderModel), animated: true)
+    }
+}
+
+// MARK: - Promo Delegate
+extension PulsaViewController: PromoDelegate {
+    func didPromoTapped(promoModel: PromoModel) {
+        let viewController = MerchantPromoViewController(promoModel: promoModel)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+// MARK: - Contact UI
+extension PulsaViewController: CNContactPickerDelegate {
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        if let phoneNumber = contact.phoneNumbers.first?.value.stringValue {
+            phoneTextField.text = phoneNumber.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
     }
 }

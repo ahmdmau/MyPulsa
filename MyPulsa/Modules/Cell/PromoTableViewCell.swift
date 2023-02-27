@@ -7,13 +7,18 @@
 
 import UIKit
 
+protocol PromoDelegate: AnyObject {
+    func didPromoTapped(promoModel: PromoModel)
+}
+
 class PromoTableViewCell: UITableViewCell, CellProtocol {
     
     static var identifier: String = "PromoTableViewCell"
     static func nib() -> UINib {
         return .init(nibName: identifier, bundle: nil)
     }
-
+    
+    weak var delegate: PromoDelegate?
     var promos: [PromoModel] = [] {
         didSet {
             collectionView.reloadData()
@@ -60,5 +65,9 @@ extension PromoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         }
         cell.setup(promo: promos[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didPromoTapped(promoModel: promos[indexPath.row])
     }
 }

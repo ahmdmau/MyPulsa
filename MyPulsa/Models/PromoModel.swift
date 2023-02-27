@@ -9,5 +9,8 @@ import Foundation
 
 struct PromoModel {
     let id: Int
+    let promoTitle: String
+    let validDate: String
+    let voucherCode: String
     let bannerImage: String
 }
