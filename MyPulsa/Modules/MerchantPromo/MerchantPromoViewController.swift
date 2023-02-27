@@ -7,14 +7,24 @@
 
 import UIKit
 
+enum MerchatPromoCellType {
+    case promoBanner(promoModel: PromoModel)
+    case promoInfo(promoModel: PromoModel)
+    case promoTnc(tnc: String)
+}
+
 class MerchantPromoViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
-    private let promoModel: PromoModel
+    private var cellType: [MerchatPromoCellType] = []
     
     init(promoModel: PromoModel) {
-        self.promoModel = promoModel
+        self.cellType = [
+            .promoBanner(promoModel: promoModel),
+            .promoInfo(promoModel: promoModel),
+            .promoTnc(tnc: tncPromo)
+        ]
         super.init(nibName: "MerchantPromoViewController", bundle: nil)
     }
     
@@ -43,28 +53,29 @@ class MerchantPromoViewController: BaseViewController {
 extension MerchantPromoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return cellType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        switch cellType[indexPath.row] {
+        case .promoBanner(let promoModel):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoBannerTableViewCell.identifier, for: indexPath) as? PromoBannerTableViewCell else {
                 return UITableViewCell()
             }
             cell.setup(with: promoModel)
             return cell
-        } else if indexPath.row == 1 {
+        case .promoInfo(let promoModel):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoInfoTableViewCell.identifier, for: indexPath) as? PromoInfoTableViewCell else {
                 return UITableViewCell()
             }
             cell.setup(with: promoModel)
             cell.delegate = self
             return cell
-        } else {
+        case .promoTnc(let tnc):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PromoTncTableViewCell.identifier, for: indexPath) as? PromoTncTableViewCell else {
                 return UITableViewCell()
             }
-            cell.setup(with: tncPromo)
+            cell.setup(with: tnc)
             return cell
         }
         

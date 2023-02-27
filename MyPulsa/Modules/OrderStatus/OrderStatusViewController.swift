@@ -7,13 +7,26 @@
 
 import UIKit
 
+enum OrderStatusCellType {
+    case paymentDetails(orderModel: OrderModel)
+    case orderDetails(orderModel: OrderModel)
+    case infoOrder
+}
+
 class OrderStatusViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     var orderModel: OrderModel
+    var cellType: [OrderStatusCellType] = []
+    
     init(orderModel: OrderModel) {
         self.orderModel = orderModel
+        self.cellType = [
+            .orderDetails(orderModel: orderModel),
+            .paymentDetails(orderModel: orderModel),
+            .infoOrder
+        ]
         super.init(nibName: "OrderStatusViewController", bundle: nil)
     }
     
@@ -44,23 +57,24 @@ class OrderStatusViewController: BaseViewController {
 extension OrderStatusViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return cellType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        switch cellType[indexPath.row] {
+        case .orderDetails(let data):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderDetailsTableViewCell.identifier, for: indexPath) as? OrderDetailsTableViewCell else {
                 return UITableViewCell()
             }
-            cell.setup(with: orderModel)
+            cell.setup(with: data)
             return cell
-        } else if indexPath.row == 1 {
+        case .paymentDetails(let data):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PaymentDetailsTableViewCell.identifier, for: indexPath) as? PaymentDetailsTableViewCell else {
                 return UITableViewCell()
             }
-            cell.setup(with: orderModel)
+            cell.setup(with: data)
             return cell
-        } else {
+        case .infoOrder:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoOrderTableViewCell.identifier, for: indexPath) as? InfoOrderTableViewCell else {
                 return UITableViewCell()
             }

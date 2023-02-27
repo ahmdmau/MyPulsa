@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum ConfirmationCellType {
+    case warning
+    case paymentDetails(orderModel: OrderModel)
+    case pinDetails
+}
+
 class ConfirmationViewController: BaseViewController {
     
     @IBOutlet weak var phoneNumberLabel: UILabel!
@@ -15,9 +21,11 @@ class ConfirmationViewController: BaseViewController {
     
     var orderModel: OrderModel
     var pin = ""
+    var cellType: [ConfirmationCellType] = []
     
     init(orderModel: OrderModel) {
         self.orderModel = orderModel
+        cellType = [.warning, .paymentDetails(orderModel: orderModel), .pinDetails]
         super.init(nibName: "ConfirmationViewController", bundle: nil)
     }
     
@@ -66,23 +74,24 @@ class ConfirmationViewController: BaseViewController {
 
 extension ConfirmationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return cellType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        switch cellType[indexPath.row] {
+        case .warning:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: WarningTableViewCell.identifier, for: indexPath) as? WarningTableViewCell else {
                 return UITableViewCell()
             }
             
             return cell
-        } else if indexPath.row == 1 {
+        case .paymentDetails(let data):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PaymentDetailsTableViewCell.identifier, for: indexPath) as? PaymentDetailsTableViewCell else {
                 return UITableViewCell()
             }
-            cell.setup(with: orderModel)
+            cell.setup(with: data)
             return cell
-        } else {
+        case .pinDetails:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PinTableViewCell.identifier, for: indexPath) as? PinTableViewCell else {
                 return UITableViewCell()
             }
