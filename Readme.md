@@ -12,9 +12,9 @@ This project is part of the test process as an iOS Developer at FinAccel created
 
 ## Screenshots
 
-<img src="Screenshots/1.png" width=200 height=433> <img src="Screenshots/2.png" width=200 height=433>
-<img src="Screenshots/3.png" width=200 height=433> <img src="Screenshots/4.png" width=200 height=433>
-<img src="Screenshots/5.png" width=200 height=433>
+<img src="Screenshots/1.PNG" width=200 height=433> <img src="Screenshots/2.PNG" width=200 height=433>
+<img src="Screenshots/3.PNG" width=200 height=433> <img src="Screenshots/4.PNG" width=200 height=433>
+<img src="Screenshots/5.PNG" width=200 height=433>
 
 ## Requirements
 
